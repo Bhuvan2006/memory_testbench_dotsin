@@ -15,7 +15,7 @@ flowchart TD
     W -->|reply| L
     L -->|final reply| R
     R -->|update: reply and tool output| MM
-    L --> M[(Model: mock, Ollama or Anthropic)]
+    L --> M[(Model: mock, Ollama, Anthropic or NVIDIA)]
     C --> M
     W --> M
 
