@@ -68,4 +68,8 @@ Check skills with `python -m src.skills.lint`.
 - One synthetic scenario and a small sample of 3 runs per configuration.
 - Scoring is keyword matching on 12 facts, and it does not judge overall reply quality.
 - Keyword retrieval misses synonyms, and fact keys are chosen by the model.
+- **Prompt caching is not used or measured.** Totals count every input token at full price. Provider prompt caching can make a stable prompt, such as eager skills or an append-only full history, much cheaper than its raw token count suggests, so real cost gaps may be smaller than these token gaps.
+- Lazy loading only helps when a task needs few skills. The `_all` rows show the case where a task needs all 10, and each load also adds a model round trip.
+- Small local models may not make real tool calls. In a check on `qwen2.5-coder:3b` (2 turns), the leader wrote the delegation as plain JSON text, so no member ran. Ollama rows with zero calendar and writer tokens do not measure a multi-agent system and should not be quoted as such.
+- Every reply and summary is saved to `replies.jsonl` next to `results.csv`, so scores can be audited.
 - Results may differ on real data and on other models. See `results/summary.md` for which model produced the current numbers.
