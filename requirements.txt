@@ -1,0 +1,9 @@
+agno==3.1.12
+anthropic==2.6.0
+ollama==0.6.3
+# agno.models.ollama imports openai, so it is required even without using OpenAI
+openai==3.46.0
+pyyaml==6.0.3
+python-dotenv==1.2.4
+matplotlib==3.11.2
+pytest==9.2.0
