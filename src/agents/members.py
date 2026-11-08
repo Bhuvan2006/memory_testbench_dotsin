@@ -1,7 +1,13 @@
 """Model selection and the two team members."""
+import functools
+import threading
+import time
+
+import httpx
 from agno.agent import Agent
 from agno.models.anthropic import Claude
 from agno.models.base import Model
+from agno.models.nvidia import Nvidia
 from agno.models.ollama import Ollama
 
 from src.agents.tools import make_read_calendar
@@ -15,6 +21,28 @@ WRITER_INSTRUCTIONS = (
 )
 
 
+class Pacer:
+    """httpx request hook that spaces out every HTTP request, including SDK retries."""
+
+    def __init__(self, requests_per_minute: float):
+        self.interval = 60 / requests_per_minute
+        self.next_slot = 0.0
+        self.lock = threading.Lock()
+
+    def __call__(self, request=None) -> None:
+        with self.lock:
+            now = time.monotonic()
+            slot = max(now, self.next_slot)
+            self.next_slot = slot + self.interval
+        time.sleep(slot - now)
+
+
+@functools.cache
+def _paced_client(requests_per_minute: float) -> httpx.Client:
+    # One shared client, because the rate limit covers the leader, members and memory calls together.
+    return httpx.Client(event_hooks={"request": [Pacer(requests_per_minute)]})
+
+
 def make_model(provider: str, model_id: str, label: str, settings: dict) -> Model:
     """`label` only matters to the mock, which uses it to act out each role."""
     if provider == "mock":
@@ -24,6 +52,11 @@ def make_model(provider: str, model_id: str, label: str, settings: dict) -> Mode
     if provider == "ollama":
         return Ollama(id=model_id, options={"temperature": settings["temperature"], "seed": settings["seed"],
                                             "num_ctx": settings["ollama_num_ctx"]})
+    if provider == "nvidia":  # OpenAI-compatible; Agno's class reads NVIDIA_API_KEY from the environment
+        # max_retries is the OpenAI SDK's exponential backoff on 429, 5xx and connection errors.
+        return Nvidia(id=model_id, temperature=settings["temperature"], seed=settings["seed"],
+                      max_retries=settings["nvidia_max_retries"],
+                      http_client=_paced_client(settings["nvidia_requests_per_minute"]))
     raise ValueError(f"Unknown provider: {provider}")
 
 

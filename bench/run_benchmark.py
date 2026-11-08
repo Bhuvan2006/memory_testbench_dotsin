@@ -133,7 +133,7 @@ def main(argv: list[str] | None = None) -> Path:
     load_dotenv(ROOT / ".env")
     settings = load_yaml("settings.yaml")
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--provider", default=os.getenv("MODEL_PROVIDER", "mock"), choices=["mock", "anthropic", "ollama"])
+    parser.add_argument("--provider", default=os.getenv("MODEL_PROVIDER", "mock"), choices=["mock", "anthropic", "ollama", "nvidia"])
     parser.add_argument("--model", default=os.getenv("MODEL_ID") or None)
     parser.add_argument("--reps", type=int, default=settings["repetitions"])
     parser.add_argument("--out", type=Path, default=None)

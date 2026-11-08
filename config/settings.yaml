@@ -2,6 +2,9 @@ default_model:
   mock: mock
   anthropic: claude-haiku-5-5
   ollama: qwen2.5-coder:3b
+  nvidia: nvidia/nemotron-3-ultra-550b-a55b
+nvidia_requests_per_minute: 38
+nvidia_max_retries: 6
 temperature: 0
 seed: 7
 # Ollama silently truncates prompts longer than num_ctx, which would make FullHistory look cheap.
