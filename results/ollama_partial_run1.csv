@@ -1,0 +1,3 @@
+kind,config,rep,provider,model,input_tokens,output_tokens,total_tokens,cost_usd,latency_s,leader_tokens,calendar_tokens,writer_tokens,memory_ops_tokens,recall_correct,wrong,parse_failures,starting_context_tokens,skill_tool_calls
+memory,full_history,1,ollama,qwen2.5-coder:3b,133412,5619,139031,0.0,2144.41,139031,0,0,0,12,0,0,0,0
+memory,rolling_summary,1,ollama,qwen2.5-coder:3b,56718,3254,59972,0.0,1116.6,55515,0,0,4457,0,12,0,0,0
