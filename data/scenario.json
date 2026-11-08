@@ -1,0 +1,376 @@
+{
+  "needles": [
+    {
+      "key": "manager",
+      "new_value": null,
+      "turn": 2,
+      "update_turn": null,
+      "value": "Priya Raman"
+    },
+    {
+      "key": "demo_slot",
+      "new_value": null,
+      "turn": 3,
+      "update_turn": null,
+      "value": "Thursday 3pm"
+    },
+    {
+      "key": "deep_work",
+      "new_value": null,
+      "turn": 4,
+      "update_turn": null,
+      "value": "morning"
+    },
+    {
+      "key": "budget_cap",
+      "new_value": "35k",
+      "turn": 5,
+      "update_turn": 20,
+      "value": "40k"
+    },
+    {
+      "key": "standup_time",
+      "new_value": null,
+      "turn": 6,
+      "update_turn": null,
+      "value": "9:45"
+    },
+    {
+      "key": "sleep_time",
+      "new_value": null,
+      "turn": 7,
+      "update_turn": null,
+      "value": "10:30pm"
+    },
+    {
+      "key": "step_goal",
+      "new_value": null,
+      "turn": 8,
+      "update_turn": null,
+      "value": "8000"
+    },
+    {
+      "key": "offsite_city",
+      "new_value": null,
+      "turn": 9,
+      "update_turn": null,
+      "value": "Lisbon"
+    },
+    {
+      "key": "codename",
+      "new_value": null,
+      "turn": 10,
+      "update_turn": null,
+      "value": "Bluefin"
+    },
+    {
+      "key": "review_day",
+      "new_value": null,
+      "turn": 11,
+      "update_turn": null,
+      "value": "Tuesday"
+    },
+    {
+      "key": "lunch_break",
+      "new_value": null,
+      "turn": 12,
+      "update_turn": null,
+      "value": "1pm"
+    },
+    {
+      "key": "team_size",
+      "new_value": null,
+      "turn": 13,
+      "update_turn": null,
+      "value": "7"
+    }
+  ],
+  "recall": [
+    {
+      "expected": "Priya",
+      "needle_key": "manager",
+      "question": "Who is my manager?",
+      "stale": null,
+      "turn": 29
+    },
+    {
+      "expected": "Thursday",
+      "needle_key": "demo_slot",
+      "question": "When is the demo?",
+      "stale": null,
+      "turn": 30
+    },
+    {
+      "expected": "morning",
+      "needle_key": "deep_work",
+      "question": "What time of day do I prefer for deep work?",
+      "stale": null,
+      "turn": 31
+    },
+    {
+      "expected": "35",
+      "needle_key": "budget_cap",
+      "question": "What is the budget cap?",
+      "stale": "40",
+      "turn": 32
+    },
+    {
+      "expected": "9:45",
+      "needle_key": "standup_time",
+      "question": "What time is our standup?",
+      "stale": null,
+      "turn": 33
+    },
+    {
+      "expected": "10:30",
+      "needle_key": "sleep_time",
+      "question": "What time do I try to be asleep by?",
+      "stale": null,
+      "turn": 34
+    },
+    {
+      "expected": "8000",
+      "needle_key": "step_goal",
+      "question": "What is my daily step goal?",
+      "stale": null,
+      "turn": 35
+    },
+    {
+      "expected": "Lisbon",
+      "needle_key": "offsite_city",
+      "question": "Which city is the team offsite in?",
+      "stale": null,
+      "turn": 36
+    },
+    {
+      "expected": "Bluefin",
+      "needle_key": "codename",
+      "question": "What is the project codename?",
+      "stale": null,
+      "turn": 37
+    },
+    {
+      "expected": "Tuesday",
+      "needle_key": "review_day",
+      "question": "Which day is my performance review?",
+      "stale": null,
+      "turn": 38
+    },
+    {
+      "expected": "1pm",
+      "needle_key": "lunch_break",
+      "question": "What time do I take lunch?",
+      "stale": null,
+      "turn": 39
+    },
+    {
+      "expected": "7",
+      "needle_key": "team_size",
+      "question": "How many people are on my team?",
+      "stale": null,
+      "turn": 40
+    }
+  ],
+  "turns": [
+    {
+      "index": 1,
+      "tool_output": null,
+      "user": "Hi, I want help planning my work week."
+    },
+    {
+      "index": 2,
+      "tool_output": null,
+      "user": "Quick context: my manager is Priya Raman."
+    },
+    {
+      "index": 3,
+      "tool_output": null,
+      "user": "The demo is on Thursday 3pm."
+    },
+    {
+      "index": 4,
+      "tool_output": null,
+      "user": "I prefer morning deep work."
+    },
+    {
+      "index": 5,
+      "tool_output": null,
+      "user": "The budget cap is 40k."
+    },
+    {
+      "index": 6,
+      "tool_output": null,
+      "user": "Our standup is at 9:45 every day."
+    },
+    {
+      "index": 7,
+      "tool_output": null,
+      "user": "I try to be asleep by 10:30pm."
+    },
+    {
+      "index": 8,
+      "tool_output": null,
+      "user": "My daily step goal is 8000 steps."
+    },
+    {
+      "index": 9,
+      "tool_output": null,
+      "user": "The team offsite will be in Lisbon."
+    },
+    {
+      "index": 10,
+      "tool_output": null,
+      "user": "The project codename is Bluefin."
+    },
+    {
+      "index": 11,
+      "tool_output": null,
+      "user": "My performance review is on Tuesday."
+    },
+    {
+      "index": 12,
+      "tool_output": null,
+      "user": "I take lunch at 1pm."
+    },
+    {
+      "index": 13,
+      "tool_output": null,
+      "user": "There are 7 people on my team."
+    },
+    {
+      "index": 14,
+      "tool_output": "event 00 | Mon 18:00 | Roadmap chat | room Willow | attendees Taylor, Sam, Casey\nevent 01 | Mon 8:30 | Office hours | room Maple | attendees Alex, Morgan, Sam\nevent 02 | Mon 14:00 | Design crit | room Birch | attendees Casey, Alex, Morgan\nevent 03 | Mon 14:00 | Sync | room Birch | attendees Alex, Morgan, Drew\nevent 04 | Sun 10:00 | Hiring panel | room Birch | attendees Jordan, Quinn, Casey\nevent 05 | Wed 17:30 | Roadmap chat | room Birch | attendees Jordan, Alex, Morgan\nevent 06 | Wed 17:30 | Office hours | room Willow | attendees Sam, Morgan, Alex\nevent 07 | Fri 13:00 | Vendor call | room Cedar | attendees Quinn, Morgan, Casey\nevent 08 | Sat 16:30 | Planning | room Willow | attendees Sam, Morgan, Jordan\nevent 09 | Wed 14:30 | Vendor call | room Aspen | attendees Sam, Alex, Morgan\nevent 10 | Sun 9:30 | Retro | room Willow | attendees Drew, Alex, Taylor\nevent 11 | Mon 9:30 | Planning | room Maple | attendees Quinn, Morgan, Casey\nevent 12 | Sun 12:30 | Hiring panel | room Aspen | attendees Alex, Taylor, Drew\nevent 13 | Wed 13:00 | Planning | room Maple | attendees Taylor, Alex, Casey\nevent 14 | Wed 10:30 | Office hours | room Aspen | attendees Casey, Drew, Jordan\nevent 15 | Sun 14:30 | Vendor call | room Aspen | attendees Sam, Quinn, Casey\nevent 16 | Sat 13:00 | Vendor call | room Maple | attendees Morgan, Taylor, Casey\nevent 17 | Wed 18:00 | Planning | room Birch | attendees Jordan, Sam, Drew\nevent 18 | Wed 8:30 | Retro | room Birch | attendees Jordan, Quinn, Drew\nevent 19 | Sun 16:00 | Planning | room Birch | attendees Taylor, Sam, Quinn\nevent 20 | Mon 14:30 | Office hours | room Maple | attendees Drew, Casey, Quinn\nevent 21 | Wed 15:00 | Retro | room Birch | attendees Casey, Alex, Sam\nevent 22 | Wed 17:00 | Retro | room Birch | attendees Alex, Quinn, Drew\nevent 23 | Sat 17:00 | Hiring panel | room Willow | attendees Alex, Quinn, Sam\nevent 24 | Sat 9:30 | Planning | room Aspen | attendees Taylor, Casey, Alex\nevent 25 | Fri 9:30 | Planning | room Cedar | attendees Morgan, Alex, Sam\nevent 26 | Wed 13:00 | Hiring panel | room Maple | attendees Alex, Sam, Morgan\nevent 27 | Fri 10:00 | Retro | room Cedar | attendees Morgan, Quinn, Jordan\nevent 28 | Wed 14:00 | Planning | room Willow | attendees Casey, Drew, Sam\nevent 29 | Fri 15:00 | Retro | room Aspen | attendees Alex, Quinn, Jordan\nevent 30 | Mon 11:00 | Planning | room Cedar | attendees Taylor, Jordan, Alex\nevent 31 | Sun 17:00 | Planning | room Willow | attendees Taylor, Sam, Casey\nevent 32 | Sat 9:00 | Planning | room Cedar | attendees Sam, Drew, Taylor\nevent 33 | Mon 13:30 | Planning | room Aspen | attendees Drew, Quinn, Taylor\nevent 34 | Wed 10:00 | Vendor call | room Birch | attendees Sam, Taylor, Quinn\nevent 35 | Sun 10:30 | Retro | room Cedar | attendees Quinn, Drew, Taylor\nevent 36 | Mon 18:00 | Office hours | room Cedar | attendees Jordan, Alex, Drew\nevent 37 | Fri 11:00 | Retro | room Willow | attendees Casey, Alex, Jordan\nevent 38 | Fri 8:30 | Office hours | room Birch | attendees Drew, Quinn, Sam\nevent 39 | Sun 16:00 | Planning | room Cedar | attendees Jordan, Morgan, Sam\nevent 40 | Wed 10:30 | Roadmap chat | room Birch | attendees Alex, Drew, Sam\nevent 41 | Sun 16:30 | Roadmap chat | room Birch | attendees Alex, Jordan, Taylor\nevent 42 | Mon 12:00 | Planning | room Birch | attendees Alex, Sam, Drew\nevent 43 | Fri 15:00 | Hiring panel | room Aspen | attendees Alex, Drew, Quinn\nevent 44 | Fri 16:00 | Planning | room Cedar | attendees Quinn, Morgan, Sam\nevent 45 | Fri 15:00 | Design crit | room Aspen | attendees Drew, Alex, Casey\nevent 46 | Mon 12:00 | Retro | room Cedar | attendees Sam, Quinn, Taylor\nevent 47 | Mon 11:30 | Planning | room Cedar | attendees Morgan, Sam, Casey\nevent 48 | Sun 14:30 | Retro | room Aspen | attendees Casey, Sam, Taylor\nevent 49 | Fri 9:00 | Retro | room Birch | attendees Casey, Jordan, Drew\nevent 50 | Sat 8:30 | Hiring panel | room Birch | attendees Quinn, Casey, Taylor\nevent 51 | Mon 9:30 | Hiring panel | room Maple | attendees Sam, Alex, Quinn\nevent 52 | Fri 14:30 | Vendor call | room Birch | attendees Jordan, Quinn, Sam\nevent 53 | Fri 9:00 | Vendor call | room Aspen | attendees Quinn, Taylor, Jordan\nevent 54 | Mon 18:30 | Roadmap chat | room Birch | attendees Sam, Jordan, Alex\nevent 55 | Sat 9:00 | Retro | room Birch | attendees Casey, Alex, Jordan\nevent 56 | Mon 10:00 | Roadmap chat | room Cedar | attendees Drew, Jordan, Morgan\nevent 57 | Fri 11:30 | Design crit | room Willow | attendees Morgan, Alex, Sam\nevent 58 | Fri 10:30 | Sync | room Willow | attendees Quinn, Morgan, Taylor\nevent 59 | Sun 16:00 | Planning | room Cedar | attendees Alex, Quinn, Drew",
+      "user": "Please pull my full calendar for this week and tell me how busy it looks."
+    },
+    {
+      "index": 15,
+      "tool_output": null,
+      "user": "Please suggest a simple agenda for a thirty minute check in."
+    },
+    {
+      "index": 16,
+      "tool_output": null,
+      "user": "I moved two errands to the weekend so the week feels lighter."
+    },
+    {
+      "index": 17,
+      "tool_output": null,
+      "user": "I want to spend less time in long email threads."
+    },
+    {
+      "index": 18,
+      "tool_output": "event 00 | Fri 16:00 | Design crit | room Willow | attendees Quinn, Morgan, Casey\nevent 01 | Wed 18:30 | Retro | room Maple | attendees Casey, Drew, Taylor\nevent 02 | Fri 18:30 | Vendor call | room Maple | attendees Jordan, Alex, Drew\nevent 03 | Fri 16:00 | Hiring panel | room Maple | attendees Sam, Taylor, Casey\nevent 04 | Sat 12:00 | Hiring panel | room Willow | attendees Quinn, Sam, Drew\nevent 05 | Mon 11:30 | Design crit | room Willow | attendees Taylor, Morgan, Jordan\nevent 06 | Mon 14:30 | Hiring panel | room Birch | attendees Jordan, Alex, Quinn\nevent 07 | Mon 8:30 | Roadmap chat | room Cedar | attendees Casey, Sam, Morgan\nevent 08 | Mon 14:30 | Hiring panel | room Cedar | attendees Drew, Morgan, Alex\nevent 09 | Sun 10:30 | Retro | room Aspen | attendees Sam, Morgan, Drew\nevent 10 | Wed 17:00 | Office hours | room Birch | attendees Jordan, Quinn, Taylor\nevent 11 | Mon 17:00 | Roadmap chat | room Maple | attendees Jordan, Morgan, Drew\nevent 12 | Mon 13:30 | Planning | room Birch | attendees Alex, Sam, Taylor\nevent 13 | Sun 18:00 | Planning | room Willow | attendees Alex, Taylor, Quinn\nevent 14 | Sun 16:00 | Roadmap chat | room Aspen | attendees Alex, Casey, Quinn\nevent 15 | Wed 12:00 | Design crit | room Aspen | attendees Morgan, Drew, Alex\nevent 16 | Sat 9:30 | Sync | room Birch | attendees Quinn, Drew, Casey\nevent 17 | Fri 10:30 | Hiring panel | room Birch | attendees Casey, Alex, Morgan\nevent 18 | Sat 8:30 | Roadmap chat | room Cedar | attendees Jordan, Alex, Casey\nevent 19 | Fri 16:30 | Planning | room Aspen | attendees Quinn, Jordan, Taylor\nevent 20 | Mon 12:30 | Sync | room Willow | attendees Sam, Morgan, Quinn\nevent 21 | Fri 15:30 | Design crit | room Cedar | attendees Quinn, Alex, Morgan\nevent 22 | Sun 10:30 | Retro | room Cedar | attendees Sam, Morgan, Alex\nevent 23 | Wed 13:30 | Planning | room Aspen | attendees Morgan, Alex, Taylor\nevent 24 | Sat 15:30 | Hiring panel | room Cedar | attendees Alex, Sam, Quinn\nevent 25 | Mon 13:30 | Sync | room Willow | attendees Drew, Jordan, Casey\nevent 26 | Wed 9:00 | Hiring panel | room Willow | attendees Taylor, Drew, Casey\nevent 27 | Sun 14:00 | Retro | room Aspen | attendees Taylor, Alex, Casey\nevent 28 | Mon 12:00 | Hiring panel | room Cedar | attendees Morgan, Drew, Alex\nevent 29 | Fri 16:00 | Retro | room Aspen | attendees Casey, Jordan, Quinn\nevent 30 | Sun 14:00 | Roadmap chat | room Maple | attendees Alex, Drew, Taylor\nevent 31 | Fri 10:30 | Sync | room Birch | attendees Drew, Casey, Morgan\nevent 32 | Fri 14:30 | Hiring panel | room Willow | attendees Jordan, Sam, Casey\nevent 33 | Fri 11:30 | Office hours | room Maple | attendees Morgan, Casey, Taylor\nevent 34 | Wed 9:30 | Design crit | room Aspen | attendees Jordan, Taylor, Sam\nevent 35 | Wed 14:00 | Design crit | room Maple | attendees Taylor, Drew, Casey\nevent 36 | Fri 9:00 | Retro | room Willow | attendees Jordan, Quinn, Morgan\nevent 37 | Sat 14:30 | Design crit | room Aspen | attendees Casey, Alex, Taylor\nevent 38 | Fri 15:30 | Vendor call | room Birch | attendees Morgan, Jordan, Alex\nevent 39 | Sat 11:30 | Planning | room Aspen | attendees Casey, Alex, Jordan\nevent 40 | Mon 10:30 | Planning | room Birch | attendees Morgan, Drew, Alex\nevent 41 | Sun 14:30 | Planning | room Cedar | attendees Quinn, Alex, Drew\nevent 42 | Sun 10:00 | Planning | room Maple | attendees Sam, Quinn, Drew\nevent 43 | Sun 11:00 | Hiring panel | room Cedar | attendees Alex, Quinn, Sam\nevent 44 | Mon 14:00 | Roadmap chat | room Willow | attendees Morgan, Quinn, Taylor\nevent 45 | Sun 11:00 | Sync | room Birch | attendees Casey, Quinn, Jordan\nevent 46 | Wed 13:30 | Design crit | room Birch | attendees Morgan, Casey, Jordan\nevent 47 | Fri 18:00 | Sync | room Cedar | attendees Casey, Alex, Quinn\nevent 48 | Mon 14:30 | Design crit | room Aspen | attendees Quinn, Taylor, Drew\nevent 49 | Fri 8:30 | Retro | room Aspen | attendees Taylor, Sam, Casey\nevent 50 | Mon 16:00 | Planning | room Cedar | attendees Casey, Alex, Jordan\nevent 51 | Sat 11:00 | Hiring panel | room Willow | attendees Morgan, Drew, Sam\nevent 52 | Wed 17:00 | Planning | room Aspen | attendees Sam, Morgan, Casey\nevent 53 | Mon 14:00 | Sync | room Birch | attendees Alex, Morgan, Sam\nevent 54 | Wed 8:30 | Planning | room Willow | attendees Jordan, Casey, Alex\nevent 55 | Wed 13:00 | Planning | room Maple | attendees Sam, Alex, Quinn\nevent 56 | Fri 14:30 | Planning | room Cedar | attendees Morgan, Taylor, Drew\nevent 57 | Mon 12:30 | Office hours | room Maple | attendees Sam, Alex, Drew\nevent 58 | Sat 12:00 | Sync | room Aspen | attendees Casey, Quinn, Jordan\nevent 59 | Wed 15:30 | Retro | room Aspen | attendees Casey, Jordan, Morgan",
+      "user": "Please pull my full calendar for this week and tell me how busy it looks."
+    },
+    {
+      "index": 19,
+      "tool_output": null,
+      "user": "Can you help me tidy my task list for this week?"
+    },
+    {
+      "index": 20,
+      "tool_output": null,
+      "user": "Update from finance: the budget cap is now 35k."
+    },
+    {
+      "index": 21,
+      "tool_output": null,
+      "user": "I want to spend less time in long email threads."
+    },
+    {
+      "index": 22,
+      "tool_output": null,
+      "user": "Remind me to look over the slide order before I share it."
+    },
+    {
+      "index": 23,
+      "tool_output": "event 00 | Sat 8:00 | Sync | room Willow | attendees Drew, Alex, Casey\nevent 01 | Fri 17:30 | Hiring panel | room Willow | attendees Casey, Taylor, Alex\nevent 02 | Fri 13:30 | Sync | room Birch | attendees Alex, Jordan, Taylor\nevent 03 | Sat 9:30 | Office hours | room Willow | attendees Sam, Alex, Quinn\nevent 04 | Sat 10:00 | Sync | room Willow | attendees Drew, Quinn, Casey\nevent 05 | Fri 13:30 | Retro | room Birch | attendees Jordan, Morgan, Sam\nevent 06 | Wed 14:00 | Office hours | room Maple | attendees Sam, Morgan, Quinn\nevent 07 | Fri 16:00 | Office hours | room Maple | attendees Alex, Casey, Morgan\nevent 08 | Wed 9:00 | Office hours | room Aspen | attendees Sam, Jordan, Morgan\nevent 09 | Sat 10:30 | Design crit | room Birch | attendees Quinn, Sam, Drew\nevent 10 | Fri 12:30 | Retro | room Willow | attendees Sam, Drew, Jordan\nevent 11 | Wed 11:00 | Design crit | room Cedar | attendees Morgan, Sam, Casey\nevent 12 | Mon 13:30 | Hiring panel | room Cedar | attendees Morgan, Quinn, Sam\nevent 13 | Sat 18:00 | Roadmap chat | room Maple | attendees Casey, Taylor, Alex\nevent 14 | Fri 15:00 | Hiring panel | room Cedar | attendees Quinn, Drew, Sam\nevent 15 | Sun 17:00 | Roadmap chat | room Willow | attendees Sam, Alex, Quinn\nevent 16 | Mon 12:00 | Retro | room Cedar | attendees Jordan, Casey, Morgan\nevent 17 | Mon 10:00 | Hiring panel | room Maple | attendees Alex, Jordan, Drew\nevent 18 | Sat 13:30 | Vendor call | room Birch | attendees Casey, Drew, Alex\nevent 19 | Sat 8:30 | Roadmap chat | room Aspen | attendees Morgan, Alex, Sam\nevent 20 | Sun 18:00 | Roadmap chat | room Cedar | attendees Sam, Drew, Casey\nevent 21 | Fri 14:30 | Office hours | room Maple | attendees Drew, Taylor, Jordan\nevent 22 | Sat 13:30 | Sync | room Willow | attendees Morgan, Taylor, Quinn\nevent 23 | Wed 14:00 | Office hours | room Cedar | attendees Casey, Quinn, Taylor\nevent 24 | Sun 14:30 | Planning | room Cedar | attendees Drew, Alex, Quinn\nevent 25 | Wed 16:30 | Roadmap chat | room Birch | attendees Jordan, Alex, Drew\nevent 26 | Wed 10:30 | Hiring panel | room Cedar | attendees Taylor, Quinn, Morgan\nevent 27 | Sat 14:00 | Hiring panel | room Cedar | attendees Jordan, Alex, Drew\nevent 28 | Sun 8:30 | Roadmap chat | room Birch | attendees Alex, Casey, Jordan\nevent 29 | Sat 17:00 | Planning | room Cedar | attendees Jordan, Taylor, Sam\nevent 30 | Wed 16:30 | Retro | room Maple | attendees Casey, Alex, Quinn\nevent 31 | Mon 11:00 | Retro | room Maple | attendees Jordan, Sam, Taylor\nevent 32 | Fri 16:30 | Hiring panel | room Birch | attendees Drew, Morgan, Casey\nevent 33 | Fri 18:30 | Planning | room Cedar | attendees Casey, Quinn, Drew\nevent 34 | Sat 15:00 | Planning | room Birch | attendees Alex, Quinn, Morgan\nevent 35 | Sat 15:00 | Roadmap chat | room Cedar | attendees Quinn, Drew, Sam\nevent 36 | Sat 9:00 | Sync | room Cedar | attendees Taylor, Casey, Jordan\nevent 37 | Mon 16:00 | Office hours | room Cedar | attendees Sam, Taylor, Jordan\nevent 38 | Mon 17:00 | Vendor call | room Aspen | attendees Alex, Drew, Quinn\nevent 39 | Wed 18:00 | Retro | room Birch | attendees Morgan, Drew, Sam\nevent 40 | Fri 17:30 | Vendor call | room Willow | attendees Morgan, Sam, Jordan\nevent 41 | Sun 12:00 | Retro | room Willow | attendees Quinn, Sam, Morgan\nevent 42 | Wed 14:30 | Retro | room Aspen | attendees Alex, Sam, Drew\nevent 43 | Sun 9:00 | Retro | room Aspen | attendees Jordan, Drew, Quinn\nevent 44 | Sat 18:30 | Hiring panel | room Aspen | attendees Sam, Jordan, Morgan\nevent 45 | Fri 13:00 | Planning | room Cedar | attendees Taylor, Morgan, Sam\nevent 46 | Fri 8:30 | Hiring panel | room Birch | attendees Jordan, Morgan, Taylor\nevent 47 | Wed 8:00 | Hiring panel | room Birch | attendees Taylor, Quinn, Alex\nevent 48 | Mon 13:00 | Planning | room Cedar | attendees Drew, Casey, Morgan\nevent 49 | Sun 8:30 | Hiring panel | room Maple | attendees Alex, Quinn, Drew\nevent 50 | Sun 14:30 | Vendor call | room Cedar | attendees Taylor, Morgan, Sam\nevent 51 | Wed 10:00 | Design crit | room Cedar | attendees Taylor, Morgan, Casey\nevent 52 | Wed 18:30 | Office hours | room Willow | attendees Quinn, Alex, Drew\nevent 53 | Fri 16:30 | Planning | room Cedar | attendees Alex, Quinn, Taylor\nevent 54 | Sun 8:00 | Office hours | room Cedar | attendees Jordan, Alex, Drew\nevent 55 | Mon 9:00 | Vendor call | room Aspen | attendees Casey, Sam, Alex\nevent 56 | Sun 18:30 | Vendor call | room Birch | attendees Casey, Morgan, Drew\nevent 57 | Mon 18:30 | Sync | room Aspen | attendees Morgan, Alex, Jordan\nevent 58 | Sat 9:00 | Design crit | room Maple | attendees Drew, Taylor, Casey\nevent 59 | Mon 8:30 | Hiring panel | room Maple | attendees Morgan, Sam, Taylor",
+      "user": "Please pull my full calendar for this week and tell me how busy it looks."
+    },
+    {
+      "index": 24,
+      "tool_output": null,
+      "user": "The office was quiet today and I got through my inbox."
+    },
+    {
+      "index": 25,
+      "tool_output": null,
+      "user": "I finished the first draft of the onboarding checklist."
+    },
+    {
+      "index": 26,
+      "tool_output": null,
+      "user": "I want to spend less time in long email threads."
+    },
+    {
+      "index": 27,
+      "tool_output": "event 00 | Mon 11:00 | Vendor call | room Willow | attendees Morgan, Jordan, Taylor\nevent 01 | Wed 11:30 | Design crit | room Aspen | attendees Casey, Drew, Taylor\nevent 02 | Sun 14:30 | Planning | room Birch | attendees Taylor, Morgan, Sam\nevent 03 | Wed 14:30 | Design crit | room Aspen | attendees Alex, Drew, Quinn\nevent 04 | Mon 10:00 | Roadmap chat | room Maple | attendees Sam, Morgan, Quinn\nevent 05 | Mon 8:00 | Vendor call | room Maple | attendees Jordan, Quinn, Sam\nevent 06 | Sun 9:30 | Design crit | room Birch | attendees Sam, Taylor, Alex\nevent 07 | Mon 14:00 | Design crit | room Cedar | attendees Sam, Drew, Taylor\nevent 08 | Mon 18:30 | Planning | room Maple | attendees Sam, Alex, Drew\nevent 09 | Fri 11:30 | Retro | room Aspen | attendees Jordan, Alex, Taylor\nevent 10 | Fri 12:00 | Retro | room Willow | attendees Morgan, Alex, Jordan\nevent 11 | Mon 17:30 | Sync | room Aspen | attendees Quinn, Drew, Jordan\nevent 12 | Sun 8:00 | Roadmap chat | room Birch | attendees Sam, Jordan, Casey\nevent 13 | Sun 8:00 | Hiring panel | room Maple | attendees Morgan, Sam, Casey\nevent 14 | Sat 9:00 | Planning | room Birch | attendees Alex, Jordan, Casey\nevent 15 | Sun 12:00 | Hiring panel | room Cedar | attendees Taylor, Drew, Morgan\nevent 16 | Mon 9:30 | Roadmap chat | room Willow | attendees Casey, Quinn, Sam\nevent 17 | Mon 14:30 | Sync | room Willow | attendees Taylor, Alex, Casey\nevent 18 | Sun 14:00 | Office hours | room Cedar | attendees Casey, Jordan, Drew\nevent 19 | Sun 17:00 | Retro | room Birch | attendees Quinn, Sam, Morgan\nevent 20 | Sun 15:30 | Vendor call | room Aspen | attendees Taylor, Morgan, Sam\nevent 21 | Wed 17:00 | Retro | room Aspen | attendees Quinn, Taylor, Jordan\nevent 22 | Fri 12:00 | Vendor call | room Cedar | attendees Casey, Morgan, Sam\nevent 23 | Wed 13:00 | Retro | room Cedar | attendees Taylor, Morgan, Drew\nevent 24 | Mon 10:00 | Office hours | room Cedar | attendees Morgan, Taylor, Alex\nevent 25 | Sat 12:30 | Design crit | room Maple | attendees Jordan, Drew, Quinn\nevent 26 | Sat 14:00 | Sync | room Aspen | attendees Sam, Jordan, Quinn\nevent 27 | Fri 16:30 | Sync | room Cedar | attendees Drew, Taylor, Sam\nevent 28 | Mon 14:00 | Office hours | room Birch | attendees Morgan, Quinn, Taylor\nevent 29 | Sun 18:00 | Vendor call | room Maple | attendees Drew, Quinn, Sam\nevent 30 | Mon 12:30 | Design crit | room Aspen | attendees Quinn, Casey, Jordan\nevent 31 | Sat 15:00 | Office hours | room Birch | attendees Jordan, Quinn, Casey\nevent 32 | Sat 8:30 | Roadmap chat | room Maple | attendees Jordan, Taylor, Quinn\nevent 33 | Wed 10:30 | Roadmap chat | room Birch | attendees Morgan, Quinn, Sam\nevent 34 | Sun 15:00 | Retro | room Birch | attendees Quinn, Morgan, Sam\nevent 35 | Wed 15:00 | Office hours | room Birch | attendees Taylor, Casey, Quinn\nevent 36 | Mon 13:30 | Hiring panel | room Aspen | attendees Sam, Taylor, Morgan\nevent 37 | Sat 9:30 | Retro | room Birch | attendees Drew, Alex, Quinn\nevent 38 | Sat 12:00 | Office hours | room Aspen | attendees Morgan, Alex, Sam\nevent 39 | Wed 9:30 | Design crit | room Cedar | attendees Casey, Sam, Drew\nevent 40 | Sat 14:30 | Vendor call | room Aspen | attendees Taylor, Quinn, Drew\nevent 41 | Sat 12:30 | Office hours | room Cedar | attendees Taylor, Drew, Sam\nevent 42 | Fri 12:00 | Hiring panel | room Willow | attendees Quinn, Alex, Taylor\nevent 43 | Mon 17:30 | Vendor call | room Willow | attendees Quinn, Casey, Drew\nevent 44 | Fri 17:00 | Retro | room Birch | attendees Drew, Alex, Quinn\nevent 45 | Mon 11:30 | Hiring panel | room Birch | attendees Alex, Taylor, Quinn\nevent 46 | Wed 11:30 | Retro | room Cedar | attendees Sam, Morgan, Quinn\nevent 47 | Sun 10:00 | Hiring panel | room Cedar | attendees Casey, Quinn, Morgan\nevent 48 | Mon 16:30 | Roadmap chat | room Birch | attendees Quinn, Taylor, Sam\nevent 49 | Wed 11:30 | Planning | room Birch | attendees Sam, Jordan, Casey\nevent 50 | Sat 10:00 | Planning | room Cedar | attendees Alex, Casey, Drew\nevent 51 | Sun 15:30 | Hiring panel | room Aspen | attendees Alex, Sam, Jordan\nevent 52 | Mon 18:00 | Retro | room Maple | attendees Taylor, Casey, Drew\nevent 53 | Fri 18:00 | Planning | room Aspen | attendees Alex, Morgan, Quinn\nevent 54 | Wed 14:30 | Roadmap chat | room Willow | attendees Jordan, Alex, Sam\nevent 55 | Wed 16:30 | Office hours | room Willow | attendees Taylor, Casey, Morgan\nevent 56 | Fri 8:30 | Retro | room Aspen | attendees Drew, Jordan, Morgan\nevent 57 | Sun 12:30 | Design crit | room Aspen | attendees Drew, Jordan, Morgan\nevent 58 | Fri 13:00 | Roadmap chat | room Maple | attendees Sam, Jordan, Quinn\nevent 59 | Sun 14:00 | Office hours | room Willow | attendees Drew, Taylor, Morgan",
+      "user": "Please pull my full calendar for this week and tell me how busy it looks."
+    },
+    {
+      "index": 28,
+      "tool_output": null,
+      "user": "I moved two errands to the weekend so the week feels lighter."
+    },
+    {
+      "index": 29,
+      "tool_output": null,
+      "user": "Who is my manager?"
+    },
+    {
+      "index": 30,
+      "tool_output": null,
+      "user": "When is the demo?"
+    },
+    {
+      "index": 31,
+      "tool_output": null,
+      "user": "What time of day do I prefer for deep work?"
+    },
+    {
+      "index": 32,
+      "tool_output": null,
+      "user": "What is the budget cap?"
+    },
+    {
+      "index": 33,
+      "tool_output": null,
+      "user": "What time is our standup?"
+    },
+    {
+      "index": 34,
+      "tool_output": null,
+      "user": "What time do I try to be asleep by?"
+    },
+    {
+      "index": 35,
+      "tool_output": null,
+      "user": "What is my daily step goal?"
+    },
+    {
+      "index": 36,
+      "tool_output": null,
+      "user": "Which city is the team offsite in?"
+    },
+    {
+      "index": 37,
+      "tool_output": null,
+      "user": "What is the project codename?"
+    },
+    {
+      "index": 38,
+      "tool_output": null,
+      "user": "Which day is my performance review?"
+    },
+    {
+      "index": 39,
+      "tool_output": null,
+      "user": "What time do I take lunch?"
+    },
+    {
+      "index": 40,
+      "tool_output": null,
+      "user": "How many people are on my team?"
+    }
+  ]
+}
