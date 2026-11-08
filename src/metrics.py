@@ -76,12 +76,26 @@ def _contains(text: str, value: str) -> bool:
     return re.search(rf"(?<!\d){re.escape(value.lower())}(?:000)?(?!\d)", text) is not None
 
 
+def _is_time(value: str) -> bool:
+    return re.search(r":\d\d|\d(am|pm)$", value) is not None
+
+
+def _normalise_times(text: str) -> str:
+    """Rewrite 22:30, 09:45 and 1:00 pm as 10:30pm, 9:45 and 1pm."""
+    text = text.replace(" ", " ").replace(" ", " ")
+    text = re.sub(r"(?<![\d:])(1[3-9]|2[0-3]):([0-5]\d)(?![\d:])", lambda m: f"{int(m[1]) - 12}:{m[2]}pm", text)
+    text = re.sub(r"(?<![\d:])0(\d):", r"\1:", text)
+    text = re.sub(r"(\d):00\s*(am|pm)\b", r"\1\2", text)
+    return re.sub(r"(\d)\s+(am|pm)\b", r"\1\2", text)
+
+
 def score_answer(answer: str, expected: str, stale: str | None = None) -> tuple[bool, bool]:
     """Return (correct, wrong_or_contradicted). Admitting ignorance is incorrect but not wrong."""
     text = re.sub(r"(\d)\s+(am|pm)\b", r"\1\2", (answer or "").lower().replace(",", "").replace("’", "'"))
-    correct = _contains(text, expected)
-    if correct:
+    unsure = any(phrase in text for phrase in UNKNOWN_PHRASES)
+    # An answer that says it lacks the fact gains nothing from time-format matching alone.
+    if _contains(text, expected) or (_is_time(expected) and not unsure and _contains(_normalise_times(text), expected)):
         return True, False
     if stale and _contains(text, stale):
         return False, True
-    return False, not any(phrase in text for phrase in UNKNOWN_PHRASES)
+    return False, not unsure

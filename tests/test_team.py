@@ -41,6 +41,13 @@ def test_scoring():
     assert score_answer("About 135", "35", "40") == (False, True)
     assert score_answer("Lunch is at 1 PM", "1pm") == (True, False)
     assert score_answer("8,000 steps", "8000") == (True, False)
+    for reply in ("At 1:00 pm", "At 1:00 pm", "At **1:00 PM**", "At 13:00"):
+        assert score_answer(reply, "1pm") == (True, False)
+    assert score_answer("By 22:30", "10:30") == (True, False)
+    assert score_answer("At 09:45", "9:45") == (True, False)
+    assert score_answer("At 2:00 pm", "1pm") == (False, True)
+    assert score_answer("Only 1:00 PM on Tuesday. I don't have a regular daily lunch time recorded.", "1pm") == (False, False)
+    assert score_answer("We meet at 19:00", "7") == (False, True)  # time rewriting only applies to time answers
     assert score_answer("It is $35,000", "35", "40") == (True, False)
     assert score_answer("It is $40,000", "35", "40") == (False, True)
     for reply in ("I don’t have that", "I couldn't find it", "That was not provided", "I am unable to say"):
