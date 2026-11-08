@@ -55,4 +55,11 @@ gitGraph
     commit id: "sync diagram for nvidia"
     checkout main
     merge feat/nvidia-provider
+    branch fix/time-format-scoring
+    commit id: "time-format scoring"
+    commit id: "rescore tool"
+    commit id: "nvidia results and note"
+    commit id: "sync diagram for rescore"
+    checkout main
+    merge fix/time-format-scoring
 ```
