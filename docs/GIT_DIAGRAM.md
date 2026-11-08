@@ -72,4 +72,10 @@ gitGraph
     commit id: "sync diagram for run count"
     checkout main
     merge docs/sync-run-count
+    branch fix/rate-limit-robustness
+    commit id: "longer backoff, slower pacing"
+    commit id: "fail on member error"
+    commit id: "sync diagram for rate limits"
+    checkout main
+    merge fix/rate-limit-robustness
 ```

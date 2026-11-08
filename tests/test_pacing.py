@@ -3,7 +3,7 @@ import time
 import httpx
 from agno.models.nvidia import Nvidia
 
-from src.agents.members import Pacer, make_model
+from src.agents.members import Pacer, RateLimitBackoff, make_model
 from src.metrics import load_yaml
 
 OK = {"id": "1", "object": "chat.completion", "created": 1, "model": "x",
@@ -37,6 +37,18 @@ def test_retries_429_and_connection_errors():
 
     assert call(handler, retries=2).choices[0].message.content == "hi"
     assert len(seen) == 3
+
+
+def test_backoff_grows_on_429_caps_and_resets(monkeypatch):
+    waits = []
+    monkeypatch.setattr("src.agents.members.time.sleep", waits.append)
+    monkeypatch.setattr("src.agents.members.random.uniform", lambda low, high: high)
+    backoff = RateLimitBackoff()
+    for _ in range(5):
+        backoff(httpx.Response(429))
+    backoff(httpx.Response(200))
+    backoff(httpx.Response(429))
+    assert waits == [15, 30, 60, 120, 120, 15]
 
 
 def test_nvidia_models_share_one_paced_client():

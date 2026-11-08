@@ -1,5 +1,6 @@
 """Model selection and the two team members."""
 import functools
+import random
 import threading
 import time
 
@@ -37,10 +38,27 @@ class Pacer:
         time.sleep(slot - now)
 
 
+class RateLimitBackoff:
+    """httpx response hook that waits 15-120 s with jitter on a 429, because the SDK's own backoff stops near 8 s."""
+
+    def __init__(self, base: float = 15.0, cap: float = 120.0):
+        self.base = base
+        self.cap = cap
+        self.consecutive = 0
+
+    def __call__(self, response: httpx.Response) -> None:
+        if response.status_code != 429:
+            self.consecutive = 0
+            return
+        wait = min(self.cap, self.base * 2 ** self.consecutive)
+        self.consecutive += 1
+        time.sleep(wait * random.uniform(0.5, 1.0))
+
+
 @functools.cache
 def _paced_client(requests_per_minute: float) -> httpx.Client:
     # One shared client, because the rate limit covers the leader, members and memory calls together.
-    return httpx.Client(event_hooks={"request": [Pacer(requests_per_minute)]})
+    return httpx.Client(event_hooks={"request": [Pacer(requests_per_minute)], "response": [RateLimitBackoff()]})
 
 
 def make_model(provider: str, model_id: str, label: str, settings: dict) -> Model:

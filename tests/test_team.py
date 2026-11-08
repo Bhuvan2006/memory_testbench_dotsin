@@ -1,9 +1,11 @@
 import pytest
+from agno.exceptions import ModelRateLimitError
 
 from data.generate_scenario import build_scenario
 from src.agents.team import build_team, run_turn
 from src.memory.full_history import FullHistory
 from src.metrics import BudgetExceeded, SpendGuard, Usage, cost_usd, load_yaml, model_price, score_answer
+from src.mock_model import MockModel
 
 SETTINGS = load_yaml("settings.yaml")
 SCEN = build_scenario()
@@ -32,6 +34,21 @@ def test_tool_output_reaches_memory_and_tokens_are_per_agent():
 def test_context_changes_between_turns():
     _, strategy, _ = run({1, 3})
     assert len(strategy.build_context(4, "x")) == 4
+
+
+def test_failed_member_fails_the_turn_and_records_nothing(monkeypatch):
+    real_invoke = MockModel.invoke
+
+    def invoke(self, *args, **kwargs):
+        if self.label == "writer":
+            raise ModelRateLimitError("429 simulated", model_name="mock")
+        return real_invoke(self, *args, **kwargs)
+
+    monkeypatch.setattr(MockModel, "invoke", invoke)
+    strategy = FullHistory()
+    with pytest.raises(RuntimeError, match="writer failed on turn 2: 429 simulated"):
+        run_turn(build_team("mock", "mock", load_yaml("settings.yaml")), strategy, 2, "hello", None, Usage())
+    assert strategy.build_context(3, "next") == []
 
 
 def test_scoring():
