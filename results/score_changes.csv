@@ -1,0 +1,3 @@
+config,rep,turn,question,answer,old_correct,new_correct,old_wrong,new_wrong
+rolling_summary,1,39,What time do I take lunch?,"You have a recurring lunch block at **1:00 pm, Monday through Friday**.",False,True,True,False
+tiered,1,34,What time do I try to be asleep by?,You try to be asleep by **22:30**.,False,True,True,False

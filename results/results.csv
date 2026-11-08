@@ -1,0 +1,10 @@
+kind,config,rep,provider,model,input_tokens,output_tokens,total_tokens,cost_usd,latency_s,leader_tokens,calendar_tokens,writer_tokens,memory_ops_tokens,recall_correct,wrong,parse_failures,starting_context_tokens,skill_tool_calls
+memory,full_history,1,nvidia,nvidia/nemotron-3-ultra-550b-a55b,414976,22472,437448,0.0,515.97,391122,16674,29652,0,12,0,0,0,0
+memory,rolling_summary,1,nvidia,nvidia/nemotron-3-ultra-550b-a55b,211057,31380,242437,0.0,670.61,179853,18793,27558,16233,12,0,0,0,0
+memory,tiered,1,nvidia,nvidia/nemotron-3-ultra-550b-a55b,188703,37934,226637,0.0,728.28,155546,18138,33808,19145,11,0,0,0,0
+skills,eager,1,nvidia,nvidia/nemotron-3-ultra-550b-a55b,1331,254,1585,0.0,4.19,0,0,0,0,0,0,0,1331,0
+skills,lazy,1,nvidia,nvidia/nemotron-3-ultra-550b-a55b,1389,246,1635,0.0,4.96,0,0,0,0,0,0,0,598,1
+skills,native,1,nvidia,nvidia/nemotron-3-ultra-550b-a55b,3402,287,3689,0.0,9.82,0,0,0,0,0,0,0,1568,1
+skills,eager_all,1,nvidia,nvidia/nemotron-3-ultra-550b-a55b,1453,813,2266,0.0,13.57,0,0,0,0,0,0,0,1453,0
+skills,lazy_all,1,nvidia,nvidia/nemotron-3-ultra-550b-a55b,2945,1280,4225,0.0,20.99,0,0,0,0,0,0,0,720,10
+skills,native_all,1,nvidia,nvidia/nemotron-3-ultra-550b-a55b,5543,1672,7215,0.0,26.24,0,0,0,0,0,0,0,1690,10
