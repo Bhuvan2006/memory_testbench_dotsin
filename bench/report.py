@@ -32,13 +32,17 @@ def _group(rows: list[dict], kind: str, order: list[str]) -> dict:
     return {name: [r for r in rows if r["kind"] == kind and r["config"] == name] for name in order}
 
 
+def _cost(rows: list[dict]) -> str:
+    return "not measured" if rows[0]["provider"] == "nvidia" else f"{_avg(rows, 'cost_usd'):.4f}"
+
+
 def _memory_table(groups: dict) -> list[str]:
     lines = ["| Strategy | Input | Output | Total | Cost USD | Latency s | Recall % | Wrong | Leader | Calendar | Writer | Memory ops | Variance |",
              "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for name, rows in groups.items():
         flag = "high" if _high_variance(rows, "total_tokens") else "low"
         lines.append(f"| {name} | {_avg(rows, 'input_tokens'):.0f} | {_avg(rows, 'output_tokens'):.0f} | "
-                     f"{_avg(rows, 'total_tokens'):.0f} | {_avg(rows, 'cost_usd'):.4f} | {_avg(rows, 'latency_s'):.1f} | "
+                     f"{_avg(rows, 'total_tokens'):.0f} | {_cost(rows)} | {_avg(rows, 'latency_s'):.1f} | "
                      f"{_avg(rows, 'recall_correct') / 12 * 100:.0f} | {_avg(rows, 'wrong'):.1f} | "
                      f"{_avg(rows, 'leader_tokens'):.0f} | {_avg(rows, 'calendar_tokens'):.0f} | "
                      f"{_avg(rows, 'writer_tokens'):.0f} | {_avg(rows, 'memory_ops_tokens'):.0f} | {flag} |")
@@ -49,7 +53,7 @@ def _skills_table(groups: dict) -> list[str]:
     lines = ["| Mode | Starting context | Total tokens | Cost USD | Latency s | Skill loads |", "|---|---|---|---|---|---|"]
     for name, rows in groups.items():
         lines.append(f"| {name} | {_avg(rows, 'starting_context_tokens'):.0f} | {_avg(rows, 'total_tokens'):.0f} | "
-                     f"{_avg(rows, 'cost_usd'):.4f} | {_avg(rows, 'latency_s'):.1f} | "
+                     f"{_cost(rows)} | {_avg(rows, 'latency_s'):.1f} | "
                      f"{_avg(rows, 'skill_tool_calls'):.1f} |")
     return lines
 

@@ -5,7 +5,7 @@ from pathlib import Path
 import yaml
 
 CONFIG_DIR = Path(__file__).parent.parent / "config"
-FREE_PROVIDERS = ("mock", "ollama")
+FREE_PROVIDERS = ("mock", "ollama", "nvidia")  # nvidia: free or trial credits, so the dollar cap does not apply
 UNKNOWN_PHRASES = ("do not know", "don't know", "don't have", "do not have", "not sure", "no information", "cannot find",
                    "can't find", "couldn't find", "could not find", "not mentioned", "not provided", "unable to")
 

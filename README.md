@@ -38,7 +38,13 @@ Paid, after copying `.env.example` to `.env` and adding `ANTHROPIC_API_KEY`:
 .venv/Scripts/python.exe bench/run_benchmark.py --provider anthropic
 ```
 
-Both write `results/results.csv`, `results/summary.md` and two charts. The run overwrites earlier files in `results/`. The default paid model is `claude-haiku-5-5`. The run aborts if estimated spend exceeds `max_cost_usd` in `config/settings.yaml`.
+Hosted on NVIDIA, tokens only, after adding `NVIDIA_API_KEY` to `.env`. Requests are paced to 38 per minute and retried with backoff. Cost is reported as not measured and `max_cost_usd` does not apply, so `cost_usd` in the CSV is a placeholder 0:
+
+```bash
+.venv/Scripts/python.exe bench/run_benchmark.py --provider nvidia
+```
+
+All of them write `results/results.csv`, `results/summary.md` and two charts. The run overwrites earlier files in `results/`. The default paid model is `claude-haiku-5-5`. The run aborts if estimated spend exceeds `max_cost_usd` in `config/settings.yaml`.
 
 `MODEL_PROVIDER` and `MODEL_ID` can also be set in `.env`.
 
@@ -71,5 +77,6 @@ Check skills with `python -m src.skills.lint`.
 - **Prompt caching is not used or measured.** Totals count every input token at full price. Provider prompt caching can make a stable prompt, such as eager skills or an append-only full history, much cheaper than its raw token count suggests, so real cost gaps may be smaller than these token gaps.
 - Lazy loading only helps when a task needs few skills. The `_all` rows show the case where a task needs all 10, and each load also adds a model round trip.
 - Small local models may not make real tool calls. In a check on `qwen2.5-coder:3b` (2 turns), the leader wrote the delegation as plain JSON text, so no member ran. Ollama rows with zero calendar and writer tokens do not measure a multi-agent system and should not be quoted as such.
+- NVIDIA runs report tokens, not money. Output tokens may include the model's reasoning, which would inflate them.
 - Every reply and summary is saved to `replies.jsonl` next to `results.csv`, so scores can be audited.
 - Results may differ on real data and on other models. See `results/summary.md` for which model produced the current numbers.
