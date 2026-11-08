@@ -42,7 +42,10 @@ gitGraph
     branch docs/hld-and-explain
     commit id: "HLD, README, answers"
     commit id: "git diagram"
-    commit id: "benchmark results"
+    commit id: "scorer phrases"
+    commit id: "replies log, all-skills task"
+    commit id: "caching caveat"
+    commit id: "sync git diagram"
     checkout main
     merge docs/hld-and-explain
 ```
