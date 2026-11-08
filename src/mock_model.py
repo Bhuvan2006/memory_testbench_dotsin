@@ -88,9 +88,10 @@ class MockModel(Model):
             return summarise(body)
         names = [t.get("function", t).get("name") for t in (tools or [])]
         loader = next((n for n in names if n in ("load_skill", "get_skill_instructions")), None)
-        if loader and not results:
+        wanted = re.findall(r"\b[a-z]+-[a-z]+\b", current)  # skill names are the only hyphenated words in the tasks
+        if loader and len(results) < len(wanted):
             key = "name" if loader == "load_skill" else "skill_name"
-            return {"name": loader, "args": {key: "meeting-notes"}}
+            return {"name": loader, "args": {key: wanted[len(results)]}}
         return "Summary, decisions and action items are ready."
 
     def invoke(self, messages, assistant_message, response_format=None, tools=None, tool_choice=None,

@@ -54,10 +54,40 @@ Plain-language notes for each milestone: what it does, why it is built that way,
 
 ## Benchmark
 
-**What it does.** `bench/run_benchmark.py` runs each memory strategy through all 40 turns and each skill mode on one small task, 3 times each. It writes `results.csv` after every finished run, then `summary.md` and two charts. Tokens come from provider usage metrics. Mock output goes to `results/mock/` so it cannot be confused with real results.
+**What it does.** `bench/run_benchmark.py` runs each memory strategy through all 40 turns and each skill mode on two tasks, 3 times each. One task needs one skill, and the `_all` task needs all 10. It writes `results.csv` after every finished run, every reply and summary to `replies.jsonl`, then `summary.md` and two charts. Tokens come from provider usage metrics. Mock output goes to `results/mock/` so it cannot be confused with real results.
 
 **Fairness.** Same scenario, model, temperature, system prompts and N. For Ollama, `num_ctx` is set high, because Ollama would otherwise silently cut long prompts and make full history look cheap.
 
-**Quality.** Recall is a keyword match on 12 known answers, with commas and spacing normalised and digit boundaries respected, so 7 does not match 17. `Wrong` counts contradicted or incorrect answers. Saying "I do not know" counts as incorrect but not wrong.
+**Quality.** Recall is a keyword match on 12 known answers, with commas and spacing normalised and digit boundaries respected, so 7 does not match 17. `Wrong` counts contradicted or incorrect answers. Admitting ignorance ("I do not know", "couldn't find", "not provided", "unable to") counts as incorrect but not wrong. "$35,000" counts as a match for the 35k budget.
+
+**A local-model finding.** On `qwen2.5-coder:3b`, a 2-turn check showed `len(output.member_responses) == 0`. The leader wrote its delegation as plain JSON text instead of a real tool call, so Agno had nothing to execute and no member ran. The zero calendar and writer tokens are therefore real, not a metrics bug, and those rows do not measure a multi-agent system.
 
 **About the mock numbers.** The mock's summariser just keeps the newest 120 words, so `RollingSummary` scores 0% recall in mock mode. That is a property of the fake summariser and says nothing about the strategy.
+
+## Likely interview questions and honest answers
+
+**Why a Team and not a Workflow?** A Workflow fits a fixed order of steps. A Team fits a model deciding who does what. The project measures what memory costs when several agents each make model calls, and model-driven delegation is the realistic case for that. The cost is that the number of calls can vary between runs, which is why each configuration runs 3 times.
+
+**Why not use Agno's built-in memory?** The experiment needs one place where only the memory strategy changes. Agno's history and memory are switched off, and each strategy decides exactly what the model sees.
+
+**What does each memory tier store?** Working memory holds the last 6 turns verbatim with tool output trimmed. Semantic memory holds durable facts as key-value pairs with a source turn. Episodic memory holds summaries of 5-turn chunks and of tool outputs, searched by keyword.
+
+**How do you handle a fact that changes?** A newer value replaces the old one under the same key. The budget cap changes at turn 20 to test this, and a stale answer is counted as wrong.
+
+**How was quality measured?** Twelve recall questions with known answers, checked by keyword match. It is deterministic and free, but it only measures fact recall. It says nothing about tone or helpfulness.
+
+**Are the summarisation costs included?** Yes, as `memory_ops`, and they are part of the totals.
+
+**Why give context to the leader and writer, but not the calendar agent?** The leader needs it to plan and the writer needs it to answer. The calendar agent only reads a tool, so sending it the conversation would add cost and no benefit.
+
+**Where does this break?** Keyword retrieval misses synonyms. A small model may return invalid JSON, which loses that chunk's facts (`parse_failures` in the results counts this). Facts that were never extracted can only be found through episodes. The scenario is one synthetic conversation that I designed myself.
+
+**Why might tiered memory not win?** It pays for extra summarising calls, and a short conversation may never recoup them. It can also lose facts that were never extracted or retrieved, so fewer tokens can come with lower recall.
+
+**Where does lazy loading not help?** When a task needs most or all skills. Each load adds a round trip, and loaded text stays in context for later model calls. The model can also pick the wrong skill. The `_all` benchmark rows measure this.
+
+**What is the prompt-caching caveat?** The benchmark does not enable caching and prices every input token in full. Provider caching discounts a repeated prompt prefix, so a stable eager prompt or append-only history can cost much less than its token count suggests. Tiered memory changes its context often, so it may benefit less. The token savings here are measured, but the real money saved could be smaller.
+
+**How would this change in production?** I would test on real conversation samples with consent, add embedding retrieval if keywords proved too weak, attribute facts to exact turns, and judge quality with more than keyword matching.
+
+**What did you learn about the framework?** Passing a message list to `Team.run` merges user turns and drops assistant turns. I found that by running a fake model and printing what it received, and that is why context goes through `additional_input`. Docs alone would not have shown it.

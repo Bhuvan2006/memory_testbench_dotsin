@@ -1,6 +1,7 @@
 """Run every configuration and write results. Example: python bench/run_benchmark.py --provider mock"""
 import argparse
 import csv
+import json
 import os
 import sys
 import time
@@ -30,6 +31,14 @@ SKILL_TASK = (
     "Use the meeting-notes skill on these jottings: met with Sam and Casey about the launch. "
     "Agreed to ship the beta on Friday. Casey will write the release post by Wednesday. Still unclear who owns support."
 )
+SKILL_TASK_ALL = (
+    "Prepare my Monday pack from the notes below. Apply every one of these skills, each to its part of the notes: "
+    "calendar-summary, task-extraction, daily-brief, meeting-notes, expense-report, goal-review, habit-check, "
+    "inbox-triage, status-update, travel-plan. Notes: Monday has a 10am budget review and a 2pm design sync. "
+    "Sam will send the slides by Tuesday. Met Casey about the launch and agreed on Friday. Spent 40 on a client lunch "
+    "and 25 on a taxi. Goal: finish the beta this month, about half done. Walked on 4 of 7 days. Three unread emails: "
+    "an invoice, a newsletter, a request from Sam. Project is on track. Flying to Lisbon on Thursday for two nights."
+)
 SKILL_BASE_PROMPT = "You help with work tasks. Follow the relevant skill when one applies."
 COLUMNS = ["kind", "config", "rep", "provider", "model", "input_tokens", "output_tokens", "total_tokens", "cost_usd",
            "latency_s", "leader_tokens", "calendar_tokens", "writer_tokens", "memory_ops_tokens", "recall_correct", "wrong",
@@ -53,7 +62,12 @@ def base_row(kind: str, config: str, rep: int, provider: str, model_id: str, usa
     }
 
 
-def run_memory(name: str, rep: int, provider: str, model_id: str, settings: dict, guard: SpendGuard) -> dict:
+def log_text(log, config: str, rep: int, kind: str, text: str, **extra) -> None:
+    log.write(json.dumps({"config": config, "rep": rep, "kind": kind, "text": text, **extra}, ensure_ascii=False) + "\n")
+    log.flush()  # logged text survives a later abort
+
+
+def run_memory(name: str, rep: int, provider: str, model_id: str, settings: dict, guard: SpendGuard, log) -> dict:
     scenario, usage = build_scenario(), Usage()
     llm = MemoryLLM(make_model(provider, model_id, "memory", settings), usage)
     strategy = make_strategy(name, llm, settings["memory"])
@@ -64,11 +78,17 @@ def run_memory(name: str, rep: int, provider: str, model_id: str, settings: dict
     for turn in scenario["turns"]:
         reply = run_turn(system, strategy, turn["index"], turn["user"], turn["tool_output"], usage)
         guard.check(usage)
+        scored = {}
         if turn["index"] in recall:
             question = recall[turn["index"]]
             is_correct, is_wrong = score_answer(reply, question["expected"], question["stale"])
             correct += is_correct
             wrong += is_wrong
+            scored = {"correct": is_correct, "wrong": is_wrong}
+        log_text(log, name, rep, "reply", reply, turn=turn["index"], user=turn["user"], **scored)
+        for summary in llm.outputs:
+            log_text(log, name, rep, "summary", summary, turn=turn["index"])
+        llm.outputs.clear()
         print(f"  {name} rep {rep} turn {turn['index']}/40", flush=True)
     guard.finish_run(usage)
     return base_row("memory", name, rep, provider, model_id, usage, guard.price, time.perf_counter() - started) | {
@@ -90,18 +110,20 @@ def build_skill_agent(mode: str, provider: str, model_id: str, settings: dict) -
                  skills=Skills(loaders=[LocalSkills(str(SKILLS_DIR))]), telemetry=False)
 
 
-def run_skill_mode(mode: str, rep: int, provider: str, model_id: str, settings: dict, guard: SpendGuard) -> dict:
+def run_skill_mode(config: str, rep: int, provider: str, model_id: str, settings: dict, guard: SpendGuard, log) -> dict:
     usage = Usage()
+    mode = config.removesuffix("_all")
     agent = build_skill_agent(mode, provider, model_id, settings)
     started = time.perf_counter()
-    output = agent.run(SKILL_TASK)
+    output = agent.run(SKILL_TASK_ALL if config.endswith("_all") else SKILL_TASK)
     if output.status != RunStatus.completed:
-        raise RuntimeError(f"Skill run failed in {mode} mode: {output.content}")
+        raise RuntimeError(f"Skill run failed in {config} mode: {output.content}")
     usage.add(mode, output.metrics)
     guard.check(usage)
     guard.finish_run(usage)
+    log_text(log, config, rep, "reply", str(output.content or ""))
     first_call = next(m for m in output.messages if m.role == "assistant")
-    return base_row("skills", mode, rep, provider, model_id, usage, guard.price, time.perf_counter() - started) | {
+    return base_row("skills", config, rep, provider, model_id, usage, guard.price, time.perf_counter() - started) | {
         "starting_context_tokens": first_call.metrics.input_tokens,
         "skill_tool_calls": sum(t.tool_name in ("load_skill", "get_skill_instructions") for t in output.tools or []),
     }
@@ -124,13 +146,14 @@ def main(argv: list[str] | None = None) -> Path:
     guard = SpendGuard(settings["max_cost_usd"], model_price(args.provider, model_id, load_yaml("prices.yaml")))
 
     jobs = [(run_memory, name) for name in MEMORY_ORDER] + [(run_skill_mode, name) for name in SKILL_ORDER]
-    with (out_dir / "results.csv").open("w", encoding="utf-8", newline="") as handle:
+    with (out_dir / "results.csv").open("w", encoding="utf-8", newline="") as handle, \
+            (out_dir / "replies.jsonl").open("w", encoding="utf-8") as log:
         writer = csv.DictWriter(handle, fieldnames=COLUMNS)
         writer.writeheader()
         for rep in range(1, args.reps + 1):
             for job, name in jobs:
                 print(f"{name} rep {rep}", flush=True)
-                writer.writerow(job(name, rep, args.provider, model_id, settings, guard))
+                writer.writerow(job(name, rep, args.provider, model_id, settings, guard, log))
                 handle.flush()  # finished runs survive a later abort
     write_report(out_dir)
     print(f"Wrote {out_dir / 'summary.md'}. Estimated spend ${guard.finished_cost:.4f}.")

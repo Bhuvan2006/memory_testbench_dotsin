@@ -1,0 +1,432 @@
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 1, "user": "Hi, I want help planning my work week."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 2, "user": "Quick context: my manager is Priya Raman."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 3, "user": "The demo is on Thursday 3pm."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 4, "user": "I prefer morning deep work."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 5, "user": "The budget cap is 40k."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 6, "user": "Our standup is at 9:45 every day."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 7, "user": "I try to be asleep by 10:30pm."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 8, "user": "My daily step goal is 8000 steps."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 9, "user": "The team offsite will be in Lisbon."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 10, "user": "The project codename is Bluefin."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 11, "user": "My performance review is on Tuesday."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 12, "user": "I take lunch at 1pm."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 13, "user": "There are 7 people on my team."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 14, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 15, "user": "Please suggest a simple agenda for a thirty minute check in."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 16, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 17, "user": "I want to spend less time in long email threads."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 18, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 19, "user": "Can you help me tidy my task list for this week?"}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 20, "user": "Update from finance: the budget cap is now 35k."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 21, "user": "I want to spend less time in long email threads."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 22, "user": "Remind me to look over the slide order before I share it."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 23, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 24, "user": "The office was quiet today and I got through my inbox."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 25, "user": "I finished the first draft of the onboarding checklist."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 26, "user": "I want to spend less time in long email threads."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 27, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 28, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Priya Raman", "turn": 29, "user": "Who is my manager?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Thursday 3pm", "turn": 30, "user": "When is the demo?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "morning", "turn": 31, "user": "What time of day do I prefer for deep work?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "35k", "turn": 32, "user": "What is the budget cap?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "9:45", "turn": 33, "user": "What time is our standup?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "10:30pm", "turn": 34, "user": "What time do I try to be asleep by?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "8000", "turn": 35, "user": "What is my daily step goal?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Lisbon", "turn": 36, "user": "Which city is the team offsite in?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Bluefin", "turn": 37, "user": "What is the project codename?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "Tuesday", "turn": 38, "user": "Which day is my performance review?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "1pm", "turn": 39, "user": "What time do I take lunch?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 1, "kind": "reply", "text": "7", "turn": 40, "user": "How many people are on my team?", "correct": true, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 1, "user": "Hi, I want help planning my work week."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 2, "user": "Quick context: my manager is Priya Raman."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 3, "user": "The demo is on Thursday 3pm."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 4, "user": "I prefer morning deep work."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 5, "user": "The budget cap is 40k."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 6, "user": "Our standup is at 9:45 every day."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 7, "user": "I try to be asleep by 10:30pm."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 8, "user": "My daily step goal is 8000 steps."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 9, "user": "The team offsite will be in Lisbon."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 10, "user": "The project codename is Bluefin."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 11, "user": "My performance review is on Tuesday."}
+{"config": "rolling_summary", "rep": 1, "kind": "summary", "text": "Hi, I want help planning my work week.\nNoted.\nQuick context: my manager is Priya Raman.\nNoted.\nThe demo is on Thursday 3pm.\nNoted.\nI prefer morning deep work.\nNoted.\nThe budget cap is 40k.\nNoted.", "turn": 11}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 12, "user": "I take lunch at 1pm."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 13, "user": "There are 7 people on my team."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 14, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 15, "user": "Please suggest a simple agenda for a thirty minute check in."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 16, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "rolling_summary", "rep": 1, "kind": "summary", "text": "Hi, I want help planning my work week.\nNoted.\nQuick context: my manager is Priya Raman.\nNoted.\nThe demo is on Thursday 3pm.\nNoted.\nI prefer morning deep work.\nNoted.\nThe budget cap is 40k.\nNoted.\nOur standup is at 9:45 every day.\nNoted.\nI try to be asleep by 10:30pm.\nNoted.\nMy daily step goal is 8000 steps.\nNoted.\nThe team offsite will be in Lisbon.\nNoted.\nThe project codename is Bluefin.\nNoted.", "turn": 16}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 17, "user": "I want to spend less time in long email threads."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 18, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 19, "user": "Can you help me tidy my task list for this week?"}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 20, "user": "Update from finance: the budget cap is now 35k."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 21, "user": "I want to spend less time in long email threads."}
+{"config": "rolling_summary", "rep": 1, "kind": "summary", "text": "Hi, I want help planning my work week.\nNoted.\nQuick context: my manager is Priya Raman.\nNoted.\nThe demo is on Thursday 3pm.\nNoted.\nI prefer morning deep work.\nNoted.\nThe budget cap is 40k.\nNoted.\nOur standup is at 9:45 every day.\nNoted.\nI try to be asleep by 10:30pm.\nNoted.\nMy daily step goal is 8000 steps.\nNoted.\nThe team offsite will be in Lisbon.\nNoted.\nThe project codename is Bluefin.\nNoted.\nMy performance review is on Tuesday.\nNoted.\nI take lunch at 1pm.\nNoted.\nThere are 7 people on my team.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nPlease suggest a simple agenda for a thirty minute check in.\nNoted.", "turn": 21}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 22, "user": "Remind me to look over the slide order before I share it."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 23, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 24, "user": "The office was quiet today and I got through my inbox."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 25, "user": "I finished the first draft of the onboarding checklist."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 26, "user": "I want to spend less time in long email threads."}
+{"config": "rolling_summary", "rep": 1, "kind": "summary", "text": "is at 9:45 every day.\nNoted.\nI try to be asleep by 10:30pm.\nNoted.\nMy daily step goal is 8000 steps.\nNoted.\nThe team offsite will be in Lisbon.\nNoted.\nThe project codename is Bluefin.\nNoted.\nMy performance review is on Tuesday.\nNoted.\nI take lunch at 1pm.\nNoted.\nThere are 7 people on my team.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nPlease suggest a simple agenda for a thirty minute check in.\nNoted.\nI moved two errands to the weekend so the week feels lighter.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nCan you help me tidy my task list for this week?\nNoted.\nUpdate from finance: the budget cap is now 35k.\nNoted.", "turn": 26}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 27, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 28, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 29, "user": "Who is my manager?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 30, "user": "When is the demo?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 31, "user": "What time of day do I prefer for deep work?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "summary", "text": "busy it looks.\nNoted.\n[Tool output]\nPlease suggest a simple agenda for a thirty minute check in.\nNoted.\nI moved two errands to the weekend so the week feels lighter.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nCan you help me tidy my task list for this week?\nNoted.\nUpdate from finance: the budget cap is now 35k.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nRemind me to look over the slide order before I share it.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nThe office was quiet today and I got through my inbox.\nNoted.\nI finished the first draft of the onboarding checklist.\nNoted.", "turn": 31}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 32, "user": "What is the budget cap?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 33, "user": "What time is our standup?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 34, "user": "What time do I try to be asleep by?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 35, "user": "What is my daily step goal?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 36, "user": "Which city is the team offsite in?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "summary", "text": "looks.\nNoted.\n[Tool output]\nCan you help me tidy my task list for this week?\nNoted.\nUpdate from finance: the budget cap is now 35k.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nRemind me to look over the slide order before I share it.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nThe office was quiet today and I got through my inbox.\nNoted.\nI finished the first draft of the onboarding checklist.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nI moved two errands to the weekend so the week feels lighter.\nNoted.\nWho is my manager?\nI do not know.\nWhen is the demo?\nI do not know.", "turn": 36}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 37, "user": "What is the project codename?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 38, "user": "Which day is my performance review?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 39, "user": "What time do I take lunch?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 1, "kind": "reply", "text": "I do not know.", "turn": 40, "user": "How many people are on my team?", "correct": false, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 1, "user": "Hi, I want help planning my work week."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 2, "user": "Quick context: my manager is Priya Raman."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 3, "user": "The demo is on Thursday 3pm."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 4, "user": "I prefer morning deep work."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 5, "user": "The budget cap is 40k."}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "{\"summary\": \"User: Hi, I want help planning my work week.\\nAssistant: Noted.\\nUser: Quick context: my manager is Priya Raman.\\nAssistant: Noted.\\nUser: The demo is on Thursday 3pm.\\nAssistant: Noted.\\nUser: I prefer morning deep work.\\nAssistant: Noted.\\nUser: The budget cap is 40k.\\nAssistant: Noted.\", \"facts\": {\"manager\": \"Priya Raman\", \"demo_slot\": \"Thursday 3pm\", \"deep_work\": \"morning\", \"budget_cap\": \"40k\"}}", "turn": 5}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 6, "user": "Our standup is at 9:45 every day."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 7, "user": "I try to be asleep by 10:30pm."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 8, "user": "My daily step goal is 8000 steps."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 9, "user": "The team offsite will be in Lisbon."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 10, "user": "The project codename is Bluefin."}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "{\"summary\": \"User: Our standup is at 9:45 every day.\\nAssistant: Noted.\\nUser: I try to be asleep by 10:30pm.\\nAssistant: Noted.\\nUser: My daily step goal is 8000 steps.\\nAssistant: Noted.\\nUser: The team offsite will be in Lisbon.\\nAssistant: Noted.\\nUser: The project codename is Bluefin.\\nAssistant: Noted.\", \"facts\": {\"standup_time\": \"9:45\", \"sleep_time\": \"10:30pm\", \"step_goal\": \"8000\", \"offsite_city\": \"Lisbon\", \"codename\": \"Bluefin\"}}", "turn": 10}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 11, "user": "My performance review is on Tuesday."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 12, "user": "I take lunch at 1pm."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 13, "user": "There are 7 people on my team."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 14, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "", "turn": 14}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 15, "user": "Please suggest a simple agenda for a thirty minute check in."}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "{\"summary\": \"User: My performance review is on Tuesday.\\nAssistant: Noted.\\nUser: I take lunch at 1pm.\\nAssistant: Noted.\\nUser: There are 7 people on my team.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: Please suggest a simple agenda for a thirty minute check in.\\nAssistant: Noted.\", \"facts\": {\"review_day\": \"Tuesday\", \"lunch_break\": \"1pm\", \"team_size\": \"7\"}}", "turn": 15}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 16, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 17, "user": "I want to spend less time in long email threads."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 18, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "", "turn": 18}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 19, "user": "Can you help me tidy my task list for this week?"}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 20, "user": "Update from finance: the budget cap is now 35k."}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "{\"summary\": \"User: I moved two errands to the weekend so the week feels lighter.\\nAssistant: Noted.\\nUser: I want to spend less time in long email threads.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: Can you help me tidy my task list for this week?\\nAssistant: Noted.\\nUser: Update from finance: the budget cap is now 35k.\\nAssistant: Noted.\", \"facts\": {\"budget_cap\": \"35k\"}}", "turn": 20}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 21, "user": "I want to spend less time in long email threads."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 22, "user": "Remind me to look over the slide order before I share it."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 23, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "", "turn": 23}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 24, "user": "The office was quiet today and I got through my inbox."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 25, "user": "I finished the first draft of the onboarding checklist."}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "{\"summary\": \"User: I want to spend less time in long email threads.\\nAssistant: Noted.\\nUser: Remind me to look over the slide order before I share it.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: The office was quiet today and I got through my inbox.\\nAssistant: Noted.\\nUser: I finished the first draft of the onboarding checklist.\\nAssistant: Noted.\", \"facts\": {}}", "turn": 25}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 26, "user": "I want to spend less time in long email threads."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 27, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "", "turn": 27}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Noted.", "turn": 28, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Priya Raman", "turn": 29, "user": "Who is my manager?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Thursday 3pm", "turn": 30, "user": "When is the demo?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "{\"summary\": \"User: I want to spend less time in long email threads.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: I moved two errands to the weekend so the week feels lighter.\\nAssistant: Noted.\\nUser: Who is my manager?\\nAssistant: Priya Raman\\nUser: When is the demo?\\nAssistant: Thursday 3pm\", \"facts\": {}}", "turn": 30}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "morning", "turn": 31, "user": "What time of day do I prefer for deep work?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "35k", "turn": 32, "user": "What is the budget cap?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "9:45", "turn": 33, "user": "What time is our standup?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "10:30pm", "turn": 34, "user": "What time do I try to be asleep by?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "8000", "turn": 35, "user": "What is my daily step goal?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "{\"summary\": \"User: What time of day do I prefer for deep work?\\nAssistant: morning\\nUser: What is the budget cap?\\nAssistant: 35k\\nUser: What time is our standup?\\nAssistant: 9:45\\nUser: What time do I try to be asleep by?\\nAssistant: 10:30pm\\nUser: What is my daily step goal?\\nAssistant: 8000\", \"facts\": {}}", "turn": 35}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Lisbon", "turn": 36, "user": "Which city is the team offsite in?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Bluefin", "turn": 37, "user": "What is the project codename?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "Tuesday", "turn": 38, "user": "Which day is my performance review?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "1pm", "turn": 39, "user": "What time do I take lunch?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "reply", "text": "7", "turn": 40, "user": "How many people are on my team?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 1, "kind": "summary", "text": "{\"summary\": \"User: Which city is the team offsite in?\\nAssistant: Lisbon\\nUser: What is the project codename?\\nAssistant: Bluefin\\nUser: Which day is my performance review?\\nAssistant: Tuesday\\nUser: What time do I take lunch?\\nAssistant: 1pm\\nUser: How many people are on my team?\\nAssistant: 7\", \"facts\": {}}", "turn": 40}
+{"config": "eager", "rep": 1, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "lazy", "rep": 1, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "native", "rep": 1, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "eager_all", "rep": 1, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "lazy_all", "rep": 1, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "native_all", "rep": 1, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 1, "user": "Hi, I want help planning my work week."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 2, "user": "Quick context: my manager is Priya Raman."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 3, "user": "The demo is on Thursday 3pm."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 4, "user": "I prefer morning deep work."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 5, "user": "The budget cap is 40k."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 6, "user": "Our standup is at 9:45 every day."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 7, "user": "I try to be asleep by 10:30pm."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 8, "user": "My daily step goal is 8000 steps."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 9, "user": "The team offsite will be in Lisbon."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 10, "user": "The project codename is Bluefin."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 11, "user": "My performance review is on Tuesday."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 12, "user": "I take lunch at 1pm."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 13, "user": "There are 7 people on my team."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 14, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 15, "user": "Please suggest a simple agenda for a thirty minute check in."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 16, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 17, "user": "I want to spend less time in long email threads."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 18, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 19, "user": "Can you help me tidy my task list for this week?"}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 20, "user": "Update from finance: the budget cap is now 35k."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 21, "user": "I want to spend less time in long email threads."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 22, "user": "Remind me to look over the slide order before I share it."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 23, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 24, "user": "The office was quiet today and I got through my inbox."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 25, "user": "I finished the first draft of the onboarding checklist."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 26, "user": "I want to spend less time in long email threads."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 27, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 28, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Priya Raman", "turn": 29, "user": "Who is my manager?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Thursday 3pm", "turn": 30, "user": "When is the demo?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "morning", "turn": 31, "user": "What time of day do I prefer for deep work?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "35k", "turn": 32, "user": "What is the budget cap?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "9:45", "turn": 33, "user": "What time is our standup?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "10:30pm", "turn": 34, "user": "What time do I try to be asleep by?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "8000", "turn": 35, "user": "What is my daily step goal?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Lisbon", "turn": 36, "user": "Which city is the team offsite in?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Bluefin", "turn": 37, "user": "What is the project codename?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "Tuesday", "turn": 38, "user": "Which day is my performance review?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "1pm", "turn": 39, "user": "What time do I take lunch?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 2, "kind": "reply", "text": "7", "turn": 40, "user": "How many people are on my team?", "correct": true, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 1, "user": "Hi, I want help planning my work week."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 2, "user": "Quick context: my manager is Priya Raman."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 3, "user": "The demo is on Thursday 3pm."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 4, "user": "I prefer morning deep work."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 5, "user": "The budget cap is 40k."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 6, "user": "Our standup is at 9:45 every day."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 7, "user": "I try to be asleep by 10:30pm."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 8, "user": "My daily step goal is 8000 steps."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 9, "user": "The team offsite will be in Lisbon."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 10, "user": "The project codename is Bluefin."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 11, "user": "My performance review is on Tuesday."}
+{"config": "rolling_summary", "rep": 2, "kind": "summary", "text": "Hi, I want help planning my work week.\nNoted.\nQuick context: my manager is Priya Raman.\nNoted.\nThe demo is on Thursday 3pm.\nNoted.\nI prefer morning deep work.\nNoted.\nThe budget cap is 40k.\nNoted.", "turn": 11}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 12, "user": "I take lunch at 1pm."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 13, "user": "There are 7 people on my team."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 14, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 15, "user": "Please suggest a simple agenda for a thirty minute check in."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 16, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "rolling_summary", "rep": 2, "kind": "summary", "text": "Hi, I want help planning my work week.\nNoted.\nQuick context: my manager is Priya Raman.\nNoted.\nThe demo is on Thursday 3pm.\nNoted.\nI prefer morning deep work.\nNoted.\nThe budget cap is 40k.\nNoted.\nOur standup is at 9:45 every day.\nNoted.\nI try to be asleep by 10:30pm.\nNoted.\nMy daily step goal is 8000 steps.\nNoted.\nThe team offsite will be in Lisbon.\nNoted.\nThe project codename is Bluefin.\nNoted.", "turn": 16}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 17, "user": "I want to spend less time in long email threads."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 18, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 19, "user": "Can you help me tidy my task list for this week?"}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 20, "user": "Update from finance: the budget cap is now 35k."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 21, "user": "I want to spend less time in long email threads."}
+{"config": "rolling_summary", "rep": 2, "kind": "summary", "text": "Hi, I want help planning my work week.\nNoted.\nQuick context: my manager is Priya Raman.\nNoted.\nThe demo is on Thursday 3pm.\nNoted.\nI prefer morning deep work.\nNoted.\nThe budget cap is 40k.\nNoted.\nOur standup is at 9:45 every day.\nNoted.\nI try to be asleep by 10:30pm.\nNoted.\nMy daily step goal is 8000 steps.\nNoted.\nThe team offsite will be in Lisbon.\nNoted.\nThe project codename is Bluefin.\nNoted.\nMy performance review is on Tuesday.\nNoted.\nI take lunch at 1pm.\nNoted.\nThere are 7 people on my team.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nPlease suggest a simple agenda for a thirty minute check in.\nNoted.", "turn": 21}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 22, "user": "Remind me to look over the slide order before I share it."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 23, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 24, "user": "The office was quiet today and I got through my inbox."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 25, "user": "I finished the first draft of the onboarding checklist."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 26, "user": "I want to spend less time in long email threads."}
+{"config": "rolling_summary", "rep": 2, "kind": "summary", "text": "is at 9:45 every day.\nNoted.\nI try to be asleep by 10:30pm.\nNoted.\nMy daily step goal is 8000 steps.\nNoted.\nThe team offsite will be in Lisbon.\nNoted.\nThe project codename is Bluefin.\nNoted.\nMy performance review is on Tuesday.\nNoted.\nI take lunch at 1pm.\nNoted.\nThere are 7 people on my team.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nPlease suggest a simple agenda for a thirty minute check in.\nNoted.\nI moved two errands to the weekend so the week feels lighter.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nCan you help me tidy my task list for this week?\nNoted.\nUpdate from finance: the budget cap is now 35k.\nNoted.", "turn": 26}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 27, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 28, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 29, "user": "Who is my manager?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 30, "user": "When is the demo?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 31, "user": "What time of day do I prefer for deep work?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "summary", "text": "busy it looks.\nNoted.\n[Tool output]\nPlease suggest a simple agenda for a thirty minute check in.\nNoted.\nI moved two errands to the weekend so the week feels lighter.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nCan you help me tidy my task list for this week?\nNoted.\nUpdate from finance: the budget cap is now 35k.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nRemind me to look over the slide order before I share it.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nThe office was quiet today and I got through my inbox.\nNoted.\nI finished the first draft of the onboarding checklist.\nNoted.", "turn": 31}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 32, "user": "What is the budget cap?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 33, "user": "What time is our standup?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 34, "user": "What time do I try to be asleep by?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 35, "user": "What is my daily step goal?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 36, "user": "Which city is the team offsite in?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "summary", "text": "looks.\nNoted.\n[Tool output]\nCan you help me tidy my task list for this week?\nNoted.\nUpdate from finance: the budget cap is now 35k.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nRemind me to look over the slide order before I share it.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nThe office was quiet today and I got through my inbox.\nNoted.\nI finished the first draft of the onboarding checklist.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nI moved two errands to the weekend so the week feels lighter.\nNoted.\nWho is my manager?\nI do not know.\nWhen is the demo?\nI do not know.", "turn": 36}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 37, "user": "What is the project codename?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 38, "user": "Which day is my performance review?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 39, "user": "What time do I take lunch?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 2, "kind": "reply", "text": "I do not know.", "turn": 40, "user": "How many people are on my team?", "correct": false, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 1, "user": "Hi, I want help planning my work week."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 2, "user": "Quick context: my manager is Priya Raman."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 3, "user": "The demo is on Thursday 3pm."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 4, "user": "I prefer morning deep work."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 5, "user": "The budget cap is 40k."}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "{\"summary\": \"User: Hi, I want help planning my work week.\\nAssistant: Noted.\\nUser: Quick context: my manager is Priya Raman.\\nAssistant: Noted.\\nUser: The demo is on Thursday 3pm.\\nAssistant: Noted.\\nUser: I prefer morning deep work.\\nAssistant: Noted.\\nUser: The budget cap is 40k.\\nAssistant: Noted.\", \"facts\": {\"manager\": \"Priya Raman\", \"demo_slot\": \"Thursday 3pm\", \"deep_work\": \"morning\", \"budget_cap\": \"40k\"}}", "turn": 5}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 6, "user": "Our standup is at 9:45 every day."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 7, "user": "I try to be asleep by 10:30pm."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 8, "user": "My daily step goal is 8000 steps."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 9, "user": "The team offsite will be in Lisbon."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 10, "user": "The project codename is Bluefin."}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "{\"summary\": \"User: Our standup is at 9:45 every day.\\nAssistant: Noted.\\nUser: I try to be asleep by 10:30pm.\\nAssistant: Noted.\\nUser: My daily step goal is 8000 steps.\\nAssistant: Noted.\\nUser: The team offsite will be in Lisbon.\\nAssistant: Noted.\\nUser: The project codename is Bluefin.\\nAssistant: Noted.\", \"facts\": {\"standup_time\": \"9:45\", \"sleep_time\": \"10:30pm\", \"step_goal\": \"8000\", \"offsite_city\": \"Lisbon\", \"codename\": \"Bluefin\"}}", "turn": 10}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 11, "user": "My performance review is on Tuesday."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 12, "user": "I take lunch at 1pm."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 13, "user": "There are 7 people on my team."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 14, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "", "turn": 14}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 15, "user": "Please suggest a simple agenda for a thirty minute check in."}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "{\"summary\": \"User: My performance review is on Tuesday.\\nAssistant: Noted.\\nUser: I take lunch at 1pm.\\nAssistant: Noted.\\nUser: There are 7 people on my team.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: Please suggest a simple agenda for a thirty minute check in.\\nAssistant: Noted.\", \"facts\": {\"review_day\": \"Tuesday\", \"lunch_break\": \"1pm\", \"team_size\": \"7\"}}", "turn": 15}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 16, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 17, "user": "I want to spend less time in long email threads."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 18, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "", "turn": 18}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 19, "user": "Can you help me tidy my task list for this week?"}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 20, "user": "Update from finance: the budget cap is now 35k."}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "{\"summary\": \"User: I moved two errands to the weekend so the week feels lighter.\\nAssistant: Noted.\\nUser: I want to spend less time in long email threads.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: Can you help me tidy my task list for this week?\\nAssistant: Noted.\\nUser: Update from finance: the budget cap is now 35k.\\nAssistant: Noted.\", \"facts\": {\"budget_cap\": \"35k\"}}", "turn": 20}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 21, "user": "I want to spend less time in long email threads."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 22, "user": "Remind me to look over the slide order before I share it."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 23, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "", "turn": 23}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 24, "user": "The office was quiet today and I got through my inbox."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 25, "user": "I finished the first draft of the onboarding checklist."}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "{\"summary\": \"User: I want to spend less time in long email threads.\\nAssistant: Noted.\\nUser: Remind me to look over the slide order before I share it.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: The office was quiet today and I got through my inbox.\\nAssistant: Noted.\\nUser: I finished the first draft of the onboarding checklist.\\nAssistant: Noted.\", \"facts\": {}}", "turn": 25}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 26, "user": "I want to spend less time in long email threads."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 27, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "", "turn": 27}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Noted.", "turn": 28, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Priya Raman", "turn": 29, "user": "Who is my manager?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Thursday 3pm", "turn": 30, "user": "When is the demo?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "{\"summary\": \"User: I want to spend less time in long email threads.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: I moved two errands to the weekend so the week feels lighter.\\nAssistant: Noted.\\nUser: Who is my manager?\\nAssistant: Priya Raman\\nUser: When is the demo?\\nAssistant: Thursday 3pm\", \"facts\": {}}", "turn": 30}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "morning", "turn": 31, "user": "What time of day do I prefer for deep work?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "35k", "turn": 32, "user": "What is the budget cap?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "9:45", "turn": 33, "user": "What time is our standup?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "10:30pm", "turn": 34, "user": "What time do I try to be asleep by?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "8000", "turn": 35, "user": "What is my daily step goal?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "{\"summary\": \"User: What time of day do I prefer for deep work?\\nAssistant: morning\\nUser: What is the budget cap?\\nAssistant: 35k\\nUser: What time is our standup?\\nAssistant: 9:45\\nUser: What time do I try to be asleep by?\\nAssistant: 10:30pm\\nUser: What is my daily step goal?\\nAssistant: 8000\", \"facts\": {}}", "turn": 35}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Lisbon", "turn": 36, "user": "Which city is the team offsite in?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Bluefin", "turn": 37, "user": "What is the project codename?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "Tuesday", "turn": 38, "user": "Which day is my performance review?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "1pm", "turn": 39, "user": "What time do I take lunch?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "reply", "text": "7", "turn": 40, "user": "How many people are on my team?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 2, "kind": "summary", "text": "{\"summary\": \"User: Which city is the team offsite in?\\nAssistant: Lisbon\\nUser: What is the project codename?\\nAssistant: Bluefin\\nUser: Which day is my performance review?\\nAssistant: Tuesday\\nUser: What time do I take lunch?\\nAssistant: 1pm\\nUser: How many people are on my team?\\nAssistant: 7\", \"facts\": {}}", "turn": 40}
+{"config": "eager", "rep": 2, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "lazy", "rep": 2, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "native", "rep": 2, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "eager_all", "rep": 2, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "lazy_all", "rep": 2, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "native_all", "rep": 2, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 1, "user": "Hi, I want help planning my work week."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 2, "user": "Quick context: my manager is Priya Raman."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 3, "user": "The demo is on Thursday 3pm."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 4, "user": "I prefer morning deep work."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 5, "user": "The budget cap is 40k."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 6, "user": "Our standup is at 9:45 every day."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 7, "user": "I try to be asleep by 10:30pm."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 8, "user": "My daily step goal is 8000 steps."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 9, "user": "The team offsite will be in Lisbon."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 10, "user": "The project codename is Bluefin."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 11, "user": "My performance review is on Tuesday."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 12, "user": "I take lunch at 1pm."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 13, "user": "There are 7 people on my team."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 14, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 15, "user": "Please suggest a simple agenda for a thirty minute check in."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 16, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 17, "user": "I want to spend less time in long email threads."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 18, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 19, "user": "Can you help me tidy my task list for this week?"}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 20, "user": "Update from finance: the budget cap is now 35k."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 21, "user": "I want to spend less time in long email threads."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 22, "user": "Remind me to look over the slide order before I share it."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 23, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 24, "user": "The office was quiet today and I got through my inbox."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 25, "user": "I finished the first draft of the onboarding checklist."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 26, "user": "I want to spend less time in long email threads."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 27, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 28, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Priya Raman", "turn": 29, "user": "Who is my manager?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Thursday 3pm", "turn": 30, "user": "When is the demo?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "morning", "turn": 31, "user": "What time of day do I prefer for deep work?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "35k", "turn": 32, "user": "What is the budget cap?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "9:45", "turn": 33, "user": "What time is our standup?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "10:30pm", "turn": 34, "user": "What time do I try to be asleep by?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "8000", "turn": 35, "user": "What is my daily step goal?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Lisbon", "turn": 36, "user": "Which city is the team offsite in?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Bluefin", "turn": 37, "user": "What is the project codename?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "Tuesday", "turn": 38, "user": "Which day is my performance review?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "1pm", "turn": 39, "user": "What time do I take lunch?", "correct": true, "wrong": false}
+{"config": "full_history", "rep": 3, "kind": "reply", "text": "7", "turn": 40, "user": "How many people are on my team?", "correct": true, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 1, "user": "Hi, I want help planning my work week."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 2, "user": "Quick context: my manager is Priya Raman."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 3, "user": "The demo is on Thursday 3pm."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 4, "user": "I prefer morning deep work."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 5, "user": "The budget cap is 40k."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 6, "user": "Our standup is at 9:45 every day."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 7, "user": "I try to be asleep by 10:30pm."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 8, "user": "My daily step goal is 8000 steps."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 9, "user": "The team offsite will be in Lisbon."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 10, "user": "The project codename is Bluefin."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 11, "user": "My performance review is on Tuesday."}
+{"config": "rolling_summary", "rep": 3, "kind": "summary", "text": "Hi, I want help planning my work week.\nNoted.\nQuick context: my manager is Priya Raman.\nNoted.\nThe demo is on Thursday 3pm.\nNoted.\nI prefer morning deep work.\nNoted.\nThe budget cap is 40k.\nNoted.", "turn": 11}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 12, "user": "I take lunch at 1pm."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 13, "user": "There are 7 people on my team."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 14, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 15, "user": "Please suggest a simple agenda for a thirty minute check in."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 16, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "rolling_summary", "rep": 3, "kind": "summary", "text": "Hi, I want help planning my work week.\nNoted.\nQuick context: my manager is Priya Raman.\nNoted.\nThe demo is on Thursday 3pm.\nNoted.\nI prefer morning deep work.\nNoted.\nThe budget cap is 40k.\nNoted.\nOur standup is at 9:45 every day.\nNoted.\nI try to be asleep by 10:30pm.\nNoted.\nMy daily step goal is 8000 steps.\nNoted.\nThe team offsite will be in Lisbon.\nNoted.\nThe project codename is Bluefin.\nNoted.", "turn": 16}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 17, "user": "I want to spend less time in long email threads."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 18, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 19, "user": "Can you help me tidy my task list for this week?"}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 20, "user": "Update from finance: the budget cap is now 35k."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 21, "user": "I want to spend less time in long email threads."}
+{"config": "rolling_summary", "rep": 3, "kind": "summary", "text": "Hi, I want help planning my work week.\nNoted.\nQuick context: my manager is Priya Raman.\nNoted.\nThe demo is on Thursday 3pm.\nNoted.\nI prefer morning deep work.\nNoted.\nThe budget cap is 40k.\nNoted.\nOur standup is at 9:45 every day.\nNoted.\nI try to be asleep by 10:30pm.\nNoted.\nMy daily step goal is 8000 steps.\nNoted.\nThe team offsite will be in Lisbon.\nNoted.\nThe project codename is Bluefin.\nNoted.\nMy performance review is on Tuesday.\nNoted.\nI take lunch at 1pm.\nNoted.\nThere are 7 people on my team.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nPlease suggest a simple agenda for a thirty minute check in.\nNoted.", "turn": 21}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 22, "user": "Remind me to look over the slide order before I share it."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 23, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 24, "user": "The office was quiet today and I got through my inbox."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 25, "user": "I finished the first draft of the onboarding checklist."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 26, "user": "I want to spend less time in long email threads."}
+{"config": "rolling_summary", "rep": 3, "kind": "summary", "text": "is at 9:45 every day.\nNoted.\nI try to be asleep by 10:30pm.\nNoted.\nMy daily step goal is 8000 steps.\nNoted.\nThe team offsite will be in Lisbon.\nNoted.\nThe project codename is Bluefin.\nNoted.\nMy performance review is on Tuesday.\nNoted.\nI take lunch at 1pm.\nNoted.\nThere are 7 people on my team.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nPlease suggest a simple agenda for a thirty minute check in.\nNoted.\nI moved two errands to the weekend so the week feels lighter.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nCan you help me tidy my task list for this week?\nNoted.\nUpdate from finance: the budget cap is now 35k.\nNoted.", "turn": 26}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 27, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 28, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 29, "user": "Who is my manager?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 30, "user": "When is the demo?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 31, "user": "What time of day do I prefer for deep work?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "summary", "text": "busy it looks.\nNoted.\n[Tool output]\nPlease suggest a simple agenda for a thirty minute check in.\nNoted.\nI moved two errands to the weekend so the week feels lighter.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nCan you help me tidy my task list for this week?\nNoted.\nUpdate from finance: the budget cap is now 35k.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nRemind me to look over the slide order before I share it.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nThe office was quiet today and I got through my inbox.\nNoted.\nI finished the first draft of the onboarding checklist.\nNoted.", "turn": 31}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 32, "user": "What is the budget cap?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 33, "user": "What time is our standup?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 34, "user": "What time do I try to be asleep by?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 35, "user": "What is my daily step goal?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 36, "user": "Which city is the team offsite in?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "summary", "text": "looks.\nNoted.\n[Tool output]\nCan you help me tidy my task list for this week?\nNoted.\nUpdate from finance: the budget cap is now 35k.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nRemind me to look over the slide order before I share it.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nThe office was quiet today and I got through my inbox.\nNoted.\nI finished the first draft of the onboarding checklist.\nNoted.\nI want to spend less time in long email threads.\nNoted.\nPlease pull my full calendar for this week and tell me how busy it looks.\nNoted.\n[Tool output]\nI moved two errands to the weekend so the week feels lighter.\nNoted.\nWho is my manager?\nI do not know.\nWhen is the demo?\nI do not know.", "turn": 36}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 37, "user": "What is the project codename?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 38, "user": "Which day is my performance review?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 39, "user": "What time do I take lunch?", "correct": false, "wrong": false}
+{"config": "rolling_summary", "rep": 3, "kind": "reply", "text": "I do not know.", "turn": 40, "user": "How many people are on my team?", "correct": false, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 1, "user": "Hi, I want help planning my work week."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 2, "user": "Quick context: my manager is Priya Raman."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 3, "user": "The demo is on Thursday 3pm."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 4, "user": "I prefer morning deep work."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 5, "user": "The budget cap is 40k."}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "{\"summary\": \"User: Hi, I want help planning my work week.\\nAssistant: Noted.\\nUser: Quick context: my manager is Priya Raman.\\nAssistant: Noted.\\nUser: The demo is on Thursday 3pm.\\nAssistant: Noted.\\nUser: I prefer morning deep work.\\nAssistant: Noted.\\nUser: The budget cap is 40k.\\nAssistant: Noted.\", \"facts\": {\"manager\": \"Priya Raman\", \"demo_slot\": \"Thursday 3pm\", \"deep_work\": \"morning\", \"budget_cap\": \"40k\"}}", "turn": 5}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 6, "user": "Our standup is at 9:45 every day."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 7, "user": "I try to be asleep by 10:30pm."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 8, "user": "My daily step goal is 8000 steps."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 9, "user": "The team offsite will be in Lisbon."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 10, "user": "The project codename is Bluefin."}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "{\"summary\": \"User: Our standup is at 9:45 every day.\\nAssistant: Noted.\\nUser: I try to be asleep by 10:30pm.\\nAssistant: Noted.\\nUser: My daily step goal is 8000 steps.\\nAssistant: Noted.\\nUser: The team offsite will be in Lisbon.\\nAssistant: Noted.\\nUser: The project codename is Bluefin.\\nAssistant: Noted.\", \"facts\": {\"standup_time\": \"9:45\", \"sleep_time\": \"10:30pm\", \"step_goal\": \"8000\", \"offsite_city\": \"Lisbon\", \"codename\": \"Bluefin\"}}", "turn": 10}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 11, "user": "My performance review is on Tuesday."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 12, "user": "I take lunch at 1pm."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 13, "user": "There are 7 people on my team."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 14, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "", "turn": 14}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 15, "user": "Please suggest a simple agenda for a thirty minute check in."}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "{\"summary\": \"User: My performance review is on Tuesday.\\nAssistant: Noted.\\nUser: I take lunch at 1pm.\\nAssistant: Noted.\\nUser: There are 7 people on my team.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: Please suggest a simple agenda for a thirty minute check in.\\nAssistant: Noted.\", \"facts\": {\"review_day\": \"Tuesday\", \"lunch_break\": \"1pm\", \"team_size\": \"7\"}}", "turn": 15}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 16, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 17, "user": "I want to spend less time in long email threads."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 18, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "", "turn": 18}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 19, "user": "Can you help me tidy my task list for this week?"}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 20, "user": "Update from finance: the budget cap is now 35k."}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "{\"summary\": \"User: I moved two errands to the weekend so the week feels lighter.\\nAssistant: Noted.\\nUser: I want to spend less time in long email threads.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: Can you help me tidy my task list for this week?\\nAssistant: Noted.\\nUser: Update from finance: the budget cap is now 35k.\\nAssistant: Noted.\", \"facts\": {\"budget_cap\": \"35k\"}}", "turn": 20}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 21, "user": "I want to spend less time in long email threads."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 22, "user": "Remind me to look over the slide order before I share it."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 23, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "", "turn": 23}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 24, "user": "The office was quiet today and I got through my inbox."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 25, "user": "I finished the first draft of the onboarding checklist."}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "{\"summary\": \"User: I want to spend less time in long email threads.\\nAssistant: Noted.\\nUser: Remind me to look over the slide order before I share it.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: The office was quiet today and I got through my inbox.\\nAssistant: Noted.\\nUser: I finished the first draft of the onboarding checklist.\\nAssistant: Noted.\", \"facts\": {}}", "turn": 25}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 26, "user": "I want to spend less time in long email threads."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 27, "user": "Please pull my full calendar for this week and tell me how busy it looks."}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "", "turn": 27}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Noted.", "turn": 28, "user": "I moved two errands to the weekend so the week feels lighter."}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Priya Raman", "turn": 29, "user": "Who is my manager?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Thursday 3pm", "turn": 30, "user": "When is the demo?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "{\"summary\": \"User: I want to spend less time in long email threads.\\nAssistant: Noted.\\nUser: Please pull my full calendar for this week and tell me how busy it looks.\\nAssistant: Noted.\\nUser: I moved two errands to the weekend so the week feels lighter.\\nAssistant: Noted.\\nUser: Who is my manager?\\nAssistant: Priya Raman\\nUser: When is the demo?\\nAssistant: Thursday 3pm\", \"facts\": {}}", "turn": 30}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "morning", "turn": 31, "user": "What time of day do I prefer for deep work?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "35k", "turn": 32, "user": "What is the budget cap?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "9:45", "turn": 33, "user": "What time is our standup?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "10:30pm", "turn": 34, "user": "What time do I try to be asleep by?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "8000", "turn": 35, "user": "What is my daily step goal?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "{\"summary\": \"User: What time of day do I prefer for deep work?\\nAssistant: morning\\nUser: What is the budget cap?\\nAssistant: 35k\\nUser: What time is our standup?\\nAssistant: 9:45\\nUser: What time do I try to be asleep by?\\nAssistant: 10:30pm\\nUser: What is my daily step goal?\\nAssistant: 8000\", \"facts\": {}}", "turn": 35}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Lisbon", "turn": 36, "user": "Which city is the team offsite in?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Bluefin", "turn": 37, "user": "What is the project codename?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "Tuesday", "turn": 38, "user": "Which day is my performance review?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "1pm", "turn": 39, "user": "What time do I take lunch?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "reply", "text": "7", "turn": 40, "user": "How many people are on my team?", "correct": true, "wrong": false}
+{"config": "tiered", "rep": 3, "kind": "summary", "text": "{\"summary\": \"User: Which city is the team offsite in?\\nAssistant: Lisbon\\nUser: What is the project codename?\\nAssistant: Bluefin\\nUser: Which day is my performance review?\\nAssistant: Tuesday\\nUser: What time do I take lunch?\\nAssistant: 1pm\\nUser: How many people are on my team?\\nAssistant: 7\", \"facts\": {}}", "turn": 40}
+{"config": "eager", "rep": 3, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "lazy", "rep": 3, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "native", "rep": 3, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "eager_all", "rep": 3, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "lazy_all", "rep": 3, "kind": "reply", "text": "Summary, decisions and action items are ready."}
+{"config": "native_all", "rep": 3, "kind": "reply", "text": "Summary, decisions and action items are ready."}

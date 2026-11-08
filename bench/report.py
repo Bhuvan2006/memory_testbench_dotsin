@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 
 HIGH_VARIANCE = 0.15  # coefficient of variation above which a mean is flagged
 MEMORY_ORDER = ["full_history", "rolling_summary", "tiered"]
-SKILL_ORDER = ["eager", "lazy", "native"]
+SKILL_ORDER = ["eager", "lazy", "native", "eager_all", "lazy_all", "native_all"]  # _all: task needs all 10 skills
 
 
 def _load(path: Path) -> list[dict]:
@@ -46,11 +46,11 @@ def _memory_table(groups: dict) -> list[str]:
 
 
 def _skills_table(groups: dict) -> list[str]:
-    lines = ["| Mode | Starting context | Total tokens | Cost USD | Latency s | Skill loaded |", "|---|---|---|---|---|---|"]
+    lines = ["| Mode | Starting context | Total tokens | Cost USD | Latency s | Skill loads |", "|---|---|---|---|---|---|"]
     for name, rows in groups.items():
         lines.append(f"| {name} | {_avg(rows, 'starting_context_tokens'):.0f} | {_avg(rows, 'total_tokens'):.0f} | "
                      f"{_avg(rows, 'cost_usd'):.4f} | {_avg(rows, 'latency_s'):.1f} | "
-                     f"{sum(int(r['skill_tool_calls']) > 0 for r in rows)}/{len(rows)} runs |")
+                     f"{_avg(rows, 'skill_tool_calls'):.1f} |")
     return lines
 
 
@@ -82,7 +82,9 @@ def write_report(out_dir: Path) -> None:
         f"with recall accuracy {_avg(full, 'recall_correct') / 12 * 100:.0f}% to {_avg(tiered, 'recall_correct') / 12 * 100:.0f}%.",
         f"- Tiered memory {verdict} total tokens than full history on this scenario.",
         f"- Starting context with 10 skills: {_avg(skills['eager'], 'starting_context_tokens'):.0f} tokens (eager) to "
-        f"{_avg(skills['lazy'], 'starting_context_tokens'):.0f} tokens (lazy).", "",
+        f"{_avg(skills['lazy'], 'starting_context_tokens'):.0f} tokens (lazy).",
+        f"- Task needing all 10 skills, total tokens: {_avg(skills['eager_all'], 'total_tokens'):.0f} (eager) vs "
+        f"{_avg(skills['lazy_all'], 'total_tokens'):.0f} (lazy).", "",
         "## Memory strategies (mean per run)", "", *_memory_table(memory), "",
         "`Wrong` counts wrong or contradicted answers out of 12. Admitting ignorance is incorrect but not wrong. "
         f"`Variance` is high when the standard deviation of total tokens is over {HIGH_VARIANCE:.0%} of the mean.", "",
@@ -94,4 +96,4 @@ def write_report(out_dir: Path) -> None:
     _bar(out_dir / "memory_tokens.png", "Total tokens per 40-turn run", "tokens",
          {name: _avg(group, "total_tokens") for name, group in memory.items()})
     _bar(out_dir / "skills_context.png", "Starting context with 10 skills", "tokens",
-         {name: _avg(group, "starting_context_tokens") for name, group in skills.items()})
+         {name: _avg(skills[name], "starting_context_tokens") for name in SKILL_ORDER[:3]})

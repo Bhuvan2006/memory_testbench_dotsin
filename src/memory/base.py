@@ -37,10 +37,12 @@ class MemoryLLM:
     def __init__(self, model: Model, usage: Usage):
         self.agent = Agent(name="memory_ops", model=model, telemetry=False)
         self.usage = usage
+        self.outputs = []  # raw summaries, drained by the benchmark into replies.jsonl
 
     def __call__(self, prompt: str) -> str:
         output = self.agent.run(prompt)
         if output.status != RunStatus.completed:
             raise RuntimeError(f"Memory model call failed: {output.content}")
         self.usage.add("memory_ops", output.metrics)
-        return str(output.content or "")
+        self.outputs.append(str(output.content or ""))
+        return self.outputs[-1]
