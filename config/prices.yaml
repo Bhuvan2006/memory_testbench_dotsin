@@ -1,0 +1,5 @@
+# USD per million tokens, from platform.claude.com/docs/en/about-claude/pricing (checked 2026-11-08).
+# Haiku 5.5 charges more above 100,000 prompt tokens. This benchmark stays far below that.
+claude-haiku-5-5:
+  input_per_mtok: 0.10
+  output_per_mtok: 0.50
