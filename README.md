@@ -48,6 +48,26 @@ All of them write `results/results.csv`, `results/summary.md` and two charts. Th
 
 `MODEL_PROVIDER` and `MODEL_ID` can also be set in `.env`.
 
+## Results
+
+Model: `nvidia/nemotron-3-ultra-550b-a55b` (`nemotron-3-ultra`). **1 run per configuration, so these are single measurements and not averages.** Tokens only: cost was not measured. Recall was rescored after the first run to fix time-format matching (see [Limitations](#limitations)).
+
+| Memory strategy, 40 turns | Total tokens | Versus full history | Recall, as first scored | Recall, after rescore | Wrong, after rescore |
+|---|---|---|---|---|---|
+| `FullHistory` | 437,448 | n/a | 12/12 | 12/12 | 0 |
+| `RollingSummary` | 242,437 | -44.6% | 11/12 | 12/12 | 0 |
+| `TieredMemory` | 226,637 | -48.2% | 10/12 | 11/12 | 0 |
+
+Totals include the tokens spent on summarising (`memory_ops`).
+
+| Skill mode | Starting context | Total tokens, 1-skill task | Total tokens, all-10 task |
+|---|---|---|---|
+| Eager | 1,331 | 1,585 | 2,266 |
+| Lazy | 598 | 1,635 | 4,225 |
+| Agno native | 1,568 | 3,689 | 7,215 |
+
+Lazy loading more than halved starting context, but it saved no total tokens on the 1-skill task and cost more when all 10 skills were needed. Full numbers are in `results/summary.md`.
+
 ## What is compared
 
 | Memory strategy | Sends each turn |
@@ -71,7 +91,7 @@ Check skills with `python -m src.skills.lint`.
 
 ## Limitations
 
-- One synthetic scenario and a small sample of 3 runs per configuration.
+- One synthetic scenario and a small sample of 1 run per configuration.
 - Scoring is keyword matching on 12 facts, and it does not judge overall reply quality.
 - Keyword retrieval misses synonyms, and fact keys are chosen by the model.
 - **Prompt caching is not used or measured.** Totals count every input token at full price. Provider prompt caching can make a stable prompt, such as eager skills or an append-only full history, much cheaper than its raw token count suggests, so real cost gaps may be smaller than these token gaps.
