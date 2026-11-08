@@ -1,0 +1,23 @@
+default_model:
+  mock: mock
+  anthropic: claude-haiku-5-5
+  ollama: qwen2.5-coder:3b
+temperature: 0
+seed: 7
+# Ollama silently truncates prompts longer than num_ctx, which would make FullHistory look cheap.
+ollama_num_ctx: 32768
+max_cost_usd: 1.0
+repetitions: 3
+
+memory:
+  working_turns: 6      # N, shared by RollingSummary and TieredMemory
+  chunk_turns: 5        # K, must be <= N so no turn leaves working memory unconsolidated
+  episodes_top_k: 3
+  episode_cap: 8
+  episode_decay: 0.97   # per turn of age
+  profile_token_cap: 200
+  tool_trim_chars: 300
+
+skills:
+  description_max_chars: 300
+  body_max_tokens: 500

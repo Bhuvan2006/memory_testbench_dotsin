@@ -12,8 +12,8 @@ from agno.models.base import Model
 from agno.models.response import ModelResponse
 
 from data.generate_scenario import NEEDLES
+from src.memory.base import TOOL_MARKER
 
-TOOL_MARKER = "[Tool output]"  # memory strategies put tool dumps after this marker
 SUMMARY_WORD_CAP = 120
 UNKNOWN = "I do not know."
 
