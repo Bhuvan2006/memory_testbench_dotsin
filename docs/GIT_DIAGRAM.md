@@ -48,4 +48,11 @@ gitGraph
     commit id: "sync git diagram"
     checkout main
     merge docs/hld-and-explain
+    branch feat/nvidia-provider
+    commit id: "nvidia provider"
+    commit id: "enforce writer"
+    commit id: "tokens-only report"
+    commit id: "sync diagram for nvidia"
+    checkout main
+    merge feat/nvidia-provider
 ```
