@@ -62,4 +62,9 @@ gitGraph
     commit id: "sync diagram for rescore"
     checkout main
     merge fix/time-format-scoring
+    branch docs/results-accuracy
+    commit id: "results table, 1-run docs"
+    commit id: "sync diagram for docs"
+    checkout main
+    merge docs/results-accuracy
 ```
