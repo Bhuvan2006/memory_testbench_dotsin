@@ -41,6 +41,10 @@ def test_scoring():
     assert score_answer("About 135", "35", "40") == (False, True)
     assert score_answer("Lunch is at 1 PM", "1pm") == (True, False)
     assert score_answer("8,000 steps", "8000") == (True, False)
+    assert score_answer("It is $35,000", "35", "40") == (True, False)
+    assert score_answer("It is $40,000", "35", "40") == (False, True)
+    for reply in ("I don’t have that", "I couldn't find it", "That was not provided", "I am unable to say"):
+        assert score_answer(reply, "35", "40") == (False, False)
 
 
 def test_unknown_paid_model_has_no_price():

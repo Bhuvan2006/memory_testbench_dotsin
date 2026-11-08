@@ -6,7 +6,8 @@ import yaml
 
 CONFIG_DIR = Path(__file__).parent.parent / "config"
 FREE_PROVIDERS = ("mock", "ollama")
-UNKNOWN_PHRASES = ("do not know", "don't know", "not sure", "no information", "cannot find", "can't find", "not mentioned")
+UNKNOWN_PHRASES = ("do not know", "don't know", "don't have", "do not have", "not sure", "no information", "cannot find",
+                   "can't find", "couldn't find", "could not find", "not mentioned", "not provided", "unable to")
 
 
 def load_yaml(name: str) -> dict:
@@ -71,12 +72,13 @@ class SpendGuard:
 
 
 def _contains(text: str, value: str) -> bool:
-    return re.search(rf"(?<!\d){re.escape(value.lower())}(?!\d)", text) is not None
+    # The optional 000 lets "35" (from 35k) also match "35000", which is "$35,000" after commas are removed.
+    return re.search(rf"(?<!\d){re.escape(value.lower())}(?:000)?(?!\d)", text) is not None
 
 
 def score_answer(answer: str, expected: str, stale: str | None = None) -> tuple[bool, bool]:
     """Return (correct, wrong_or_contradicted). Admitting ignorance is incorrect but not wrong."""
-    text = re.sub(r"(\d)\s+(am|pm)\b", r"\1\2", (answer or "").lower().replace(",", ""))
+    text = re.sub(r"(\d)\s+(am|pm)\b", r"\1\2", (answer or "").lower().replace(",", "").replace("’", "'"))
     correct = _contains(text, expected)
     if correct:
         return True, False
