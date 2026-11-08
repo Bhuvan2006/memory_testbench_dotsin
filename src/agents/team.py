@@ -46,6 +46,10 @@ def run_turn(system: TeamSystem, strategy: MemoryStrategy, turn_index: int, user
     output = system.team.run(user_message)
     if output.status != RunStatus.completed:
         raise RuntimeError(f"Team run failed on turn {turn_index}: {output.content}")
+    # A failed member leaves the team "completed" with the error text as its reply, so check each one.
+    for member_run in output.member_responses or []:
+        if member_run.status != RunStatus.completed:
+            raise RuntimeError(f"{member_run.agent_name} failed on turn {turn_index}: {member_run.content}")
 
     usage.add("leader", output.metrics)  # leader metrics exclude members
     tool_outputs = []
