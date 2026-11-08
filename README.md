@@ -38,7 +38,7 @@ Paid, after copying `.env.example` to `.env` and adding `ANTHROPIC_API_KEY`:
 .venv/Scripts/python.exe bench/run_benchmark.py --provider anthropic
 ```
 
-Hosted on NVIDIA, tokens only, after adding `NVIDIA_API_KEY` to `.env`. Requests are paced to 38 per minute and retried with backoff. Cost is reported as not measured and `max_cost_usd` does not apply, so `cost_usd` in the CSV is a placeholder 0:
+Hosted on NVIDIA, tokens only, after adding `NVIDIA_API_KEY` to `.env`. Requests are paced to 30 per minute and retried with backoff. Cost is reported as not measured and `max_cost_usd` does not apply, so `cost_usd` in the CSV is a placeholder 0:
 
 ```bash
 .venv/Scripts/python.exe bench/run_benchmark.py --provider nvidia
