@@ -11,8 +11,10 @@ from src.memory.base import MemoryStrategy
 from src.metrics import Usage
 
 LEADER_INSTRUCTIONS = (
-    "Plan how to handle each user message. Delegate to calendar_agent only when the user asks about their calendar. "
-    "Always delegate to writer last, passing the user's message and any calendar findings as the task. "
+    "You never answer the user yourself, even for greetings, simple statements or facts you already know. "
+    "Delegate to calendar_agent only when the user asks about their calendar. "
+    "On every message, without exception, your last tool call must delegate to writer, "
+    "passing the user's message and any calendar findings as the task. "
     "Return the writer's reply unchanged."
 )
 
