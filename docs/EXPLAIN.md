@@ -39,3 +39,25 @@ Plain-language notes for each milestone: what it does, why it is built that way,
 **Counting costs honestly.** Summarising and extracting cost tokens too. They are logged under `memory_ops` and included in totals.
 
 **Trade-offs.** Keyword retrieval misses synonyms. Fact keys are chosen by the model, so one fact can end up under two keys. The prompt lists existing keys to reduce that. A fact's source turn is the end of its 5-turn chunk, not its exact turn. If the model returns invalid JSON, the raw text is kept as an episode, but no facts are stored from that chunk.
+
+## Skill harness
+
+**What it does.** `src/skills/loader.py` reads only the name and description of each skill at startup and lists them in the prompt. `load_skill(name)` returns a full body when the agent asks. `src/skills/lint.py` checks frontmatter, name against folder, description length, body size and duplicates. There are 4 real skills and 6 generated dummies.
+
+**Three modes compared.** *Eager* puts all bodies in the prompt. *Lazy* is my loader. *Native* is Agno's `Skills(loaders=[LocalSkills(path)])`, which exists in 3.1.12.
+
+**Why this design.** A skill name from the model is only looked up in a dictionary, so it can never become a file path. Starting context is read from the provider's usage on the first model call, so it includes tool definitions.
+
+**What differs in native.** Agno gives three tools (`get_skill_instructions`, `get_skill_reference`, `get_skill_script`) and adds a fixed block of explanatory text to the prompt, so its starting context is larger than my loader's. It validates skills at load, including that the name matches the folder. On a Team, native skills reach only the leader. The comparison uses one Agent per mode so that only the prompt differs.
+
+**Trade-offs.** Lazy loading adds a tool round trip, and it is only cheaper when most skills go unused. If the agent needs many skills in one task, eager can win. The linter's token budget is a word-count estimate, which is fine for a rule of thumb.
+
+## Benchmark
+
+**What it does.** `bench/run_benchmark.py` runs each memory strategy through all 40 turns and each skill mode on one small task, 3 times each. It writes `results.csv` after every finished run, then `summary.md` and two charts. Tokens come from provider usage metrics. Mock output goes to `results/mock/` so it cannot be confused with real results.
+
+**Fairness.** Same scenario, model, temperature, system prompts and N. For Ollama, `num_ctx` is set high, because Ollama would otherwise silently cut long prompts and make full history look cheap.
+
+**Quality.** Recall is a keyword match on 12 known answers, with commas and spacing normalised and digit boundaries respected, so 7 does not match 17. `Wrong` counts contradicted or incorrect answers. Saying "I do not know" counts as incorrect but not wrong.
+
+**About the mock numbers.** The mock's summariser just keeps the newest 120 words, so `RollingSummary` scores 0% recall in mock mode. That is a property of the fake summariser and says nothing about the strategy.
