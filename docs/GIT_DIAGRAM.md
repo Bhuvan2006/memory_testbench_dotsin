@@ -78,4 +78,9 @@ gitGraph
     commit id: "sync diagram for rate limits"
     checkout main
     merge fix/rate-limit-robustness
+    branch docs/run-b-results
+    commit id: "run_b results and docs"
+    commit id: "sync diagram for run_b"
+    checkout main
+    merge docs/run-b-results
 ```

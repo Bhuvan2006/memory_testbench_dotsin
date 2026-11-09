@@ -54,7 +54,7 @@ Plain-language notes for each milestone: what it does, why it is built that way,
 
 ## Benchmark
 
-**What it does.** `bench/run_benchmark.py` runs each memory strategy through all 40 turns and each skill mode on two tasks. The default is 3 repetitions, but the reported NVIDIA run used 1 (`--reps 1`). One task needs one skill, and the `_all` task needs all 10. It writes `results.csv` after every finished run, every reply and summary to `replies.jsonl`, then `summary.md` and two charts. Tokens come from provider usage metrics. Mock output goes to `results/mock/` so it cannot be confused with real results.
+**What it does.** `bench/run_benchmark.py` runs each memory strategy through all 40 turns and each skill mode on two tasks. The default is 3 repetitions, but the reported NVIDIA run used 2 (`--reps 2 --out results/run_b`). One task needs one skill, and the `_all` task needs all 10. It writes `results.csv` after every finished run, every reply and summary to `replies.jsonl`, then `summary.md` and two charts. Tokens come from provider usage metrics. Mock output goes to `results/mock/` so it cannot be confused with real results.
 
 **Fairness.** Same scenario, model, temperature, system prompts and N. For Ollama, `num_ctx` is set high, because Ollama would otherwise silently cut long prompts and make full history look cheap.
 
@@ -66,7 +66,7 @@ Plain-language notes for each milestone: what it does, why it is built that way,
 
 ## Likely interview questions and honest answers
 
-**Why a Team and not a Workflow?** A Workflow fits a fixed order of steps. A Team fits a model deciding who does what. The project measures what memory costs when several agents each make model calls, and model-driven delegation is the realistic case for that. The cost is that the number of calls can vary between runs, which is why the benchmark defaults to 3 repetitions per configuration. The reported run used only 1, so it cannot show how much the numbers vary.
+**Why a Team and not a Workflow?** A Workflow fits a fixed order of steps. A Team fits a model deciding who does what. The project measures what memory costs when several agents each make model calls, and model-driven delegation is the realistic case for that. The cost is that the number of calls can vary between runs, which is why the benchmark defaults to 3 repetitions per configuration. The reported run used only 2, so it gives just a rough idea of how much the numbers vary.
 
 **Why not use Agno's built-in memory?** The experiment needs one place where only the memory strategy changes. Agno's history and memory are switched off, and each strategy decides exactly what the model sees.
 
